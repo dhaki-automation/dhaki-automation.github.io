@@ -12014,3 +12014,13 @@ clip-path: polygon(0% 120px, 50% 60px, 100% 0%, 100% 100%, 50% calc(100% - 60px)
 .related-products .shop-item{
 	margin-bottom: 30px;
 }
+
+
+.dim-frame{
+	padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Dim background color */
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Dim frame */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
