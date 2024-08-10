@@ -9105,7 +9105,7 @@ clip-path: polygon(0% 120px, 50% 60px, 100% 0%, 100% 100%, 50% calc(100% - 60px)
 }
 
 .cws-overlay-bg.bg-orange{
-	background-color: rgba(247,90,0,0.6);
+	background: linear-gradient(45deg, rgba(229,42,0,0.85), rgba(242,173,12,0.85));
 }
 
 /*=== Newslatter form ===*/
@@ -9341,29 +9341,28 @@ clip-path: polygon(0% 120px, 50% 60px, 100% 0%, 100% 100%, 50% calc(100% - 60px)
 
 .contact-block .inner{
 	position: relative;
-	padding-left: 90px;
-	margin-bottom: 40px;
+	padding-left: 70px;
 }
 
 .contact-info .contact-block .icon{
 	position: absolute;
 	left: 0;
 	top: 0;
-	height: 70px;
-	width: 70px;
-	background-color: #539760;
+	height: 50px;
+	width: 50px;
+	background-color: #ffffff;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
 	font-size: 30px;
-	color: #ffffff;
+	color: #f87109;
 	margin: 0 0 20px;
 }
 
 .contact-info .contact-block h5{
 	font-size: 24px;
-	color: #59ab66;
+	color: #ffffff;
 	font-weight: 700;
 	margin-bottom: 10px;
 }
@@ -12023,4 +12022,45 @@ clip-path: polygon(0% 120px, 50% 60px, 100% 0%, 100% 100%, 50% calc(100% - 60px)
     border: 2px solid rgba(255, 255, 255, 0.5); /* Dim frame */
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.main-header .logo a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none; /* Removes any underline */
+	white-space: nowrap;
+}
+
+.mobile-header .logo a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none; /* Removes any underline */
+	white-space: nowrap;
+	margin-left: 30%;
+}
+
+.sticky-header .logo a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none; /* Removes any underline */
+	white-space: nowrap;
+}
+
+.subscribe-section .reach-us {
+	padding-left: 5%;
+}
+
+.subscribe-section .sec-title .reach-us-title {
+	color: white;
+	white-space: nowrap;
+}
+
+.subscribe-section .reach-us-text {
+	color: white;
 }
