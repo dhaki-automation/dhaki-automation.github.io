@@ -6,14 +6,18 @@
 
 <!-- Stylesheets -->
 <link href="css/bootstrap.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet">
-
-<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-<link rel="icon" href="images/favicon.png" type="image/x-icon">
+<link href="plugins/revolution/css/settings.css" rel="stylesheet" type="text/css"><!-- REVOLUTION SETTINGS STYLES -->
+<link href="plugins/revolution/css/layers.css" rel="stylesheet" type="text/css"><!-- REVOLUTION LAYERS STYLES -->
+<link href="plugins/revolution/css/navigation.css" rel="stylesheet" type="text/css"><!-- REVOLUTION NAVIGATION STYLES -->
 
 <!-- Floating WhatsApp button -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+<link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,12 +43,12 @@
             <div class="hex"></div>
         </div>
     </div>
-    
+
     <!-- Floating WhatsApp-->
     <a href="https://api.whatsapp.com/send?phone=971585129241&text=Hi%21%20I%20need%20your%20automation%20services" class="float" target="_blank">
         <i class="fab fa-whatsapp my-float"></i>
     </a>
-
+    
     <!-- Main Header-->
     <header class="main-header">
         <!-- Main box -->
@@ -64,7 +68,7 @@
                                     </a>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="#services"><span>Services</span></a>
+                                    <a href="index.html#services"><span>Services</span></a>
                                     <ul>
                                         <li><a href="smart-homes.html">Smart Homes</a></li>
                                         <li><a href="smart-offices.html">Smart Offices</a></li>
@@ -74,18 +78,43 @@
                                 <li>
                                     <a href="about.html"><span>About Us</span></a>
                                 </li>
-                                <li><a href="#contact-us">Contact Us</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
                             </ul>
                         </div>
                     </nav>
                     <!-- Main Menu End-->
+
+                    <div class="outer-box clearfix">
+                        <!-- Search Btn -->
+                        <div class="search-box">
+                            <button class="search-btn"><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sticky Header  -->
+        <div class="sticky-header">
+            <div class="outer-box">
+                <!--Logo-->
+                <div class="logo">
+                    <a href="#" title="Sticky Logo">DHAKI AUTOMATION</a>
+                </div>
+
+                <!--Nav Outer-->
+                <div class="nav-outer">
+                    <!-- Main Menu -->
+                    <nav class="main-menu">
+                        <!--Keep This Empty / Menu will come through Javascript-->
+                    </nav><!-- Main Menu End-->
                 </div>
             </div>
         </div><!-- End Sticky Menu -->
 
         <!-- Mobile Header -->
         <div class="mobile-header">
-            <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title="" srcset="images/logo-white-big.png 2x"></a></div>
+            <div class="logo"><a href="index.html">DHAKI AUTOMATION</a></div>
 
             <!--Nav Box-->
             <div class="nav-outer clearfix">
@@ -96,7 +125,7 @@
         <!-- Mobile Menu  -->
         <div class="mobile-menu">            
             <nav class="menu-box">
-                <div class="nav-logo"><a href="index.html"><img src="images/logo.png" alt="" title="" srcset="images/logo-white-big.png 2x"></a></div> 
+                <div class="nav-logo"><a href="index.html"></a></div> 
                 <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
             </nav>
         </div><!-- End Mobile Menu -->
@@ -122,52 +151,56 @@
     
     <!--Page Title-->
     <section class="page-title">
-        <div class="cws-image-bg" style="background-image: url(https://via.placeholder.com/1920x1080)">
-            <div class="cws-overlay-bg"></div>
+        <!-- Background Layers -->
+        <div class="background-layers">
+            <div class="cws-image-bg" style="background-image: url(https://via.placeholder.com/1920x1080)">
+                <div class="cws-overlay-bg"></div>
+            </div>
         </div>
 
         <div class="auto-container">
-            <h1>About Us</h1>
+            <h1>Smart Hotels</h1>
             <ul class="page-breadcrumb">
                 <li><a href="index.html">Home</a></li>
-                <li>About Us</li>
+                <li><a href="index.html#services">Services</a></li>
+                <li>Smart Hotels</li>
             </ul>
         </div>
     </section>
     <!--End Page Title-->
 
-    <!-- About Section Three -->
-    <section class="about-section-three">
-         <!-- Background Layers -->
-        <div class="background-layers">
-            <div class="cws-image-bg" style="background-image: url(images/about-us.jpg)"></div>
-            <div class="cws-triangle-overlay bottom-left"></div>
-            <div class="cws-triangle-overlay bottom-right"></div>
-        </div>
-
+    <!-- Portfolio Single -->
+    <section class="portfolio-single-section">
         <div class="auto-container">
-            <div class="row">
-                <!-- Content Column -->
-                <div class="content-column col-lg-15 col-md-12 col-sm-12" id="who-we-are">
-                    <div class="inner-column">
-                        <div class="sec-title"><h2 style="color: white;">WHO WE ARE</h2></div>
-                        <p style="color: white;">Our name, “Dhaki” (ذَكِي) derived from the Arabic word for “smart,” reflects our commitment to intelligence and innovation in every project we undertake. At Dhaki Automation is where innovation meets elegance in the world of smart automation. Based in Dubai, we specialize in creating bespoke automation solutions for homes, offices, and hotels, all designed to enhance your lifestyle with unmatched convenience, security, and luxury.</p>
-                        <br/>
-                        <p style="color: white;">At Dhaki Automation, we understand that technology should not only make life easier but also enrich the spaces where you live, work, and relax. That’s why we offer a wide range of automation services, from lighting and climate control to security systems and entertainment solutions, all fully integrated into a seamless, user-friendly experience. What sets us apart is our excellent customer service and dedication to user's privacy and security, ensuring that our cutting-edge technology always respects your personal space and data.</p>
-                        <br/>
-                        <p style="color: white;">Our team of experts is passionate about delivering high-quality, customized solutions that align with your unique needs and aesthetic preferences. Whether you’re looking to transform your home into a smart sanctuary, modernize your office environment, or elevate the guest experience in your hotel, Dhaki Automation is here to make it happen.</p>
-                    </div>
-                    <div class="btn-box">
-                        <a href="contact.html" class="theme-btn btn-style-one large">Contact Us</a>                        
-                    </div>
+            
+            <div class="portfolio-single">
+                <h3>Smart Hotels: Redefining Luxury and Convenience</h3>
+                <p>Dhaki Automation brings the future of hospitality to life with our state-of-the-art smart hotel solutions. Our technology transforms guest rooms into personalized sanctuaries, where every detail is controlled with ease. From automated lighting and climate control to sound and entertainment systems, our solutions provide guests with a seamless, intuitive experience. Guests can tailor their environment with just a touch command, enhancing comfort and convenience. With a strong emphasis on privacy, security, and luxury, Dhaki Automation ensures that every guest’s stay is not only memorable but also ahead of its time.</p>
+            </div>
+            <br/>
+            <div class="gallery-images row mid-spacing">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <figure class="image">
+                        <a href="images/smart-hotels-hotel-1.jpg" class="lightbox-image" data-fancybox='single-img'><img src="images/smart-hotels-hotel-1.jpg" alt="" /></a>
+                    </figure>
                 </div>
-            </div>            
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <figure class="image">
+                        <a href="images/smart-hotels-hotel-2.jpg" class="lightbox-image" data-fancybox='single-img'><img src="images/smart-hotels-hotel-2.jpg" alt="" /></a>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <figure class="image">
+                        <a href="images/smart-hotels-hotel-3.jpg" class="lightbox-image" data-fancybox='single-img'><img src="images/smart-hotels-hotel-3.jpg" alt="" /></a>
+                    </figure>
+                </div>
+            </div>
         </div>
     </section>
-    <!-- End About Section Three -->
+    <!-- End Portfolio Single -->   
 
-     <!-- Main Footer -->
-     <footer class="main-footer">
+    <!-- Main Footer -->
+    <footer class="main-footer">
         <div class="auto-container">
             <!--Widgets Section-->
             <div class="widgets-section">
@@ -252,7 +285,8 @@
 <script src="js/wow.js"></script>
 <script src="js/appear.js"></script>
 <script src="js/jquery.fancybox.js"></script>
-<script src="js/odometer.min.js"></script>
+<script src="js/sticky_sidebar.min.js"></script>
+<script src="js/isotope.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

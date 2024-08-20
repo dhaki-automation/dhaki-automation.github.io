@@ -86,3 +86,8 @@
 .odometer.odometer-auto-theme .odometer-value, .odometer.odometer-theme-default .odometer-value {
   text-align: center;
 }
+
+.facts-number::after {
+  content: "+";
+  margin-left: 2px; /* Optional: Adds space between the number and the plus sign */
+}

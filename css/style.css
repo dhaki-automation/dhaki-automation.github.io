@@ -3841,9 +3841,9 @@ hr{
     top: 0;
     left: 0;
     background: rgb(88,110,111);
-    background: -moz-linear-gradient(left, rgba(88,110,111,1) 0%, rgba(54,162,104,1) 50%, rgba(15,120,96,1) 100%);
-    background: -webkit-linear-gradient(left, rgba(88,110,111,1) 0%,rgba(54,162,104,1) 50%,rgba(15,120,96,1) 100%);
-    background: linear-gradient(to right, rgba(88,110,111,1) 0%,rgba(54,162,104,1) 50%,rgba(15,120,96,1) 100%);
+    background: -moz-linear-gradient(45deg, rgba(229,42,0,0.85), rgba(242,173,12,0.85));
+    background: -webkit-linear-gradient(45deg, rgba(229,42,0,0.85), rgba(242,173,12,0.85));
+    background: linear-gradient(45deg, rgba(229,42,0,0.85), rgba(242,173,12,0.85));
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=&#039;#586e6f&#039;, endColorstr=&#039;#0f7860&#039;,GradientType=1 );
     opacity: 0.9;
 }
@@ -4203,7 +4203,7 @@ hr{
 }
 
 .progress-grap .inner-text{
-	color: #ffffff;
+	color: #363636;
 	font-size: 32px;
 }
 
@@ -4213,7 +4213,7 @@ hr{
 }
 
 .progress-grap .pie-graph h4{
-	color: #ffffff;
+	color: #363636;
 }
 
 .about-section-two .image-column .inner-column{
@@ -4251,7 +4251,7 @@ hr{
 .about-section-three .cws-triangle-overlay.bottom-right{
 	clip-path: polygon(50% calc(100% - 60px), 100% calc(100% - 120px), 100% 100%);
     -webkit-clip-path: polygon(50% calc(100% - 60px), 100% calc(100% - 120px), 100% 100%);
-    background: rgba(115,181,134,0.5);
+    background: linear-gradient(45deg, rgba(229,42,0,0.85), rgba(242,173,12,0.85));
 }
 
 .about-section-three .content-column{
@@ -5950,7 +5950,7 @@ clip-path: polygon(0% 120px, 50% 60px, 100% 0%, 100% 100%, 50% calc(100% - 60px)
 }
 
 .fun-fact-section-two .cws-image-bg .cws-overlay-bg{
-	background-color: #539760;
+	background: linear-gradient(45deg, rgba(229,42,0,0.85), rgba(242,173,12,0.85));
 }
 
 .fun-fact-section-two .cws-triangle-overlay.top-left{
@@ -5962,7 +5962,7 @@ clip-path: polygon(0% 120px, 50% 60px, 100% 0%, 100% 100%, 50% calc(100% - 60px)
 .fun-fact-section-two .cws-triangle-overlay.bottom-left{
     clip-path: polygon(0% calc(100% - 120px), 50% calc(100% - 60px), 0% 100%);
     -webkit-clip-path: polygon(0% calc(100% - 120px), 50% calc(100% - 60px), 0% 100%);
-    background: rgba(115,169,125,0.85);
+    background: linear-gradient(45deg, rgba(229,42,0,0.85), rgba(242,173,12,0.85));
 }
 
 .fun-fact-section-two .cws-triangle-overlay.bottom-right{
@@ -7818,7 +7818,7 @@ clip-path: polygon(0% 120px, 50% 60px, 100% 0%, 100% 100%, 50% calc(100% - 60px)
 }
 
 .process-section-two .cws-overlay-bg{
-    background-color: rgba(55,56,55,0.75);
+    background-color: rgba(55,56,55,0.98);
 }
 
 .process-section-two .process-block{
@@ -7852,6 +7852,7 @@ clip-path: polygon(0% 120px, 50% 60px, 100% 0%, 100% 100%, 50% calc(100% - 60px)
 .process-section-two .text{
 	font-size: 16px;
 	font-weight: 400;
+    opacity: 0.7;
     color: #ffffff;
     padding: 0 10px;
 }
@@ -8763,7 +8764,6 @@ clip-path: polygon(0% 120px, 50% 60px, 100% 0%, 100% 100%, 50% calc(100% - 60px)
 
 .call-to-action .sec-title .text{
 	margin-bottom: 35px;
-	color: white;
 }
 
 .call-to-action .sec-title .btn-box{
@@ -9105,7 +9105,7 @@ clip-path: polygon(0% 120px, 50% 60px, 100% 0%, 100% 100%, 50% calc(100% - 60px)
 }
 
 .cws-overlay-bg.bg-orange{
-	background: linear-gradient(45deg, rgba(229,42,0,0.85), rgba(242,173,12,0.85));
+	background-color: rgba(247,90,0,0.6);
 }
 
 /*=== Newslatter form ===*/
@@ -9165,17 +9165,17 @@ clip-path: polygon(0% 120px, 50% 60px, 100% 0%, 100% 100%, 50% calc(100% - 60px)
 
 /* Subscribe Section Style Two */
 
-.contact-map-section.style-two{
+.subscribe-section.style-two{
 	padding: 180px 0 100px;
 }
 
-.contact-map-section.style-two .cws-triangle-overlay.top-right{
+.subscribe-section.style-two .cws-triangle-overlay.top-right{
 	clip-path: polygon(40% 60px, 100% 0%, 100% 120px);
     -webkit-clip-path: polygon(40% 60px, 100% 0%, 100% 120px);
     background: #f8deca;
 }
 
-.contact-map-section.style-two .cws-triangle-overlay.top-left{
+.subscribe-section.style-two .cws-triangle-overlay.top-left{
     clip-path: polygon(0% 0%, 40% 60px, 0% 120px);
     -webkit-clip-path: polygon(0% 0%, 40% 60px, 0% 120px);
     background: rgba(248,222,202,0.9);
@@ -9284,7 +9284,7 @@ clip-path: polygon(0% 120px, 50% 60px, 100% 0%, 100% 100%, 50% calc(100% - 60px)
 
 ***/
 
-/* .contact-map-section{
+.contact-map-section{
 	position: relative;
 	padding: 185px 0 145px;
 }
@@ -9301,7 +9301,7 @@ clip-path: polygon(0% 120px, 50% 60px, 100% 0%, 100% 100%, 50% calc(100% - 60px)
 	clip-path: polygon( 100% 0, 50% 60px, 50% calc(100% - 60px), 100% 100% );
     -webkit-clip-path: polygon( 100% 0, 50% 60px, 50% calc(100% - 60px), 100% 100% );
     background: #f7f7f7;
-}  */
+}
 
 .contact-map-section .map-outer iframe{
 	position: absolute;
@@ -9341,15 +9341,16 @@ clip-path: polygon(0% 120px, 50% 60px, 100% 0%, 100% 100%, 50% calc(100% - 60px)
 
 .contact-block .inner{
 	position: relative;
-	padding-left: 70px;
+	padding-left: 90px;
+	margin-bottom: 40px;
 }
 
 .contact-info .contact-block .icon{
 	position: absolute;
 	left: 0;
 	top: 0;
-	height: 50px;
-	width: 50px;
+	height: 70px;
+	width: 70px;
 	background-color: #ffffff;
 	display: flex;
 	justify-content: center;
@@ -9390,7 +9391,7 @@ clip-path: polygon(0% 120px, 50% 60px, 100% 0%, 100% 100%, 50% calc(100% - 60px)
 .contact-form-section .cws-image-bg{
 	clip-path: polygon(0% 0%, 50% 60px, 100% 0%, 100% 100%, 50% 100%, 0% 100%);
     -webkit-clip-path: polygon(0% 0%, 50% 60px, 100% 0%, 100% 100%, 50% 100%, 0% 100%);
-    background-color: #5ca56b;
+    background: linear-gradient(45deg, rgba(229,42,0,0.85), rgba(242,173,12,0.85));
 }
 
 .contact-form-section .cws-triangle-overlay.top-left{
@@ -12014,6 +12015,9 @@ clip-path: polygon(0% 120px, 50% 60px, 100% 0%, 100% 100%, 50% calc(100% - 60px)
 	margin-bottom: 30px;
 }
 
+/***
+CUSTOM VALUES
+***/
 
 .dim-frame{
 	padding: 20px;
@@ -12082,4 +12086,15 @@ clip-path: polygon(0% 120px, 50% 60px, 100% 0%, 100% 100%, 50% calc(100% - 60px)
 
 .my-float{
 	margin-top:16px;
+}
+
+#contact-section {
+	background: linear-gradient(45deg, rgba(229,42,0,0.85), rgba(242,173,12,0.85));
+}
+
+#who-we-are {
+	background-color: rgba(0, 0, 0, 0.8); /* Adds a semi-transparent black background */
+	color: white; /* Ensures text remains readable */
+	padding: 20px; /* Optional: Add padding to improve spacing */
+	border-radius: 10px; /* Optional: Adds rounded corners */
 }
