@@ -8446,13 +8446,13 @@ clip-path: polygon(0% 120px, 50% 60px, 100% 0%, 100% 100%, 50% calc(100% - 60px)
 }
 
 .team-block .image-box:hover .overlay-box{
-	top: 10%;
+	top: 50%;
 }
 
 .team-block .image-box:hover .overlay-box:before{
 	opacity: 0.9;
     transition-delay: 0s;
-	background-color: #59ab66;
+	background-color: #d67311;
 }
 
 .team-block .overlay-box .text{
@@ -8492,7 +8492,7 @@ clip-path: polygon(0% 120px, 50% 60px, 100% 0%, 100% 100%, 50% calc(100% - 60px)
 }
 
 .team-block .social-icon li a:hover{
-	color: #59ab66;
+	color: #d67311;
 	background-color: #ffffff;
 }
 
