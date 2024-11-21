@@ -22,7 +22,7 @@
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 </head>
 
-<body>
+<body oncontextmenu="return false">
 
 <div class="page-wrapper color-scheme-orange">
 
@@ -178,7 +178,9 @@
                 <!-- Team Block -->
                 <div class="team-block col-lg-3 col-md-6 col-sm-12 mx-4">
                     <div class="image-box">
-                        <figure class="image"><img src="./images/team/andres.jpg" alt=""></figure>
+                        <figure class="image">
+                            <img src="./images/team/andres.jpg" alt="" style="pointer-events: none; user-select: none;" oncontextmenu="return false" draggable="false">
+                        </figure>
                         <div class="overlay-box">
                             <div class="text"></div>
                             <ul class="social-icon">
@@ -194,7 +196,9 @@
                 <!-- Team Block -->
                 <div class="team-block col-lg-3 col-md-6 col-sm-12 mx-4">
                     <div class="image-box">
-                        <figure class="image"><img src="./images/team/daniel.jpeg" alt=""></figure>
+                        <figure class="image">
+                            <img src="./images/team/daniel.jpeg" alt="" style="pointer-events: none; user-select: none;" oncontextmenu="return false" draggable="false">
+                        </figure>
                         <div class="overlay-box">
                             <div class="text"></div>
                             <ul class="social-icon">
@@ -209,7 +213,9 @@
                 <!-- Team Block -->
                 <div class="team-block col-lg-3 col-md-6 col-sm-12 mx-4">
                     <div class="image-box">
-                        <figure class="image"><img src="./images/team/rajeh.jpeg" alt=""></figure>
+                        <figure class="image">
+                            <img src="./images/team/rajeh.jpeg" alt="" style="pointer-events: none; user-select: none;" oncontextmenu="return false" draggable="false">
+                        </figure>
                         <div class="overlay-box">
                             <div class="text"></div>
                             <ul class="social-icon">
@@ -312,5 +318,22 @@
 <script src="js/jquery.fancybox.js"></script>
 <script src="js/odometer.min.js"></script>
 <script src="js/script.js"></script>
+
+<script>
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+    
+    document.addEventListener('keydown', function(e) {
+        // Disable Ctrl+Shift+I, Ctrl+U, and F12
+        if (
+            (e.ctrlKey && e.shiftKey && e.keyCode === 73) || // Ctrl+Shift+I
+            (e.ctrlKey && e.keyCode === 85) || // Ctrl+U
+            e.keyCode === 123 // F12
+        ) {
+            e.preventDefault();
+        }
+    });
+</script>
 </body>
 </html>
