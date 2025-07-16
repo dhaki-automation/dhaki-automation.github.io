@@ -570,6 +570,32 @@
 	}
 }
 
+@media only screen and (max-width: 1023px) {
+  .main-header .logo, .mobile-header .logo {
+    max-width: 120px !important;
+    height: auto !important;
+    margin: 0 auto 0 0 !important;
+    padding: 8px 0 8px 8px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+  }
+  .main-header .logo img, .mobile-header .logo img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main-header .logo, .mobile-header .logo {
+    max-width: 90px !important;
+    padding: 4px 0 4px 4px !important;
+  }
+  .main-header .logo img, .mobile-header .logo img {
+    max-width: 80px !important;
+  }
+}
+
 @media only screen and (max-width: 767px){
 
 	#slide-4-layer-33 a, #slide-5-layer-33 a {
