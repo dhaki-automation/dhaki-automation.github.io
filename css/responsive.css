@@ -599,7 +599,7 @@
 @media only screen and (max-width: 767px){
 
 	#slide-4-layer-33 a, #slide-5-layer-33 a {
-        font-size: 24px !important;
+        font-size: 24px;
     }
 	
 	.how-to-use .cws-overlay-bg.half-left{
