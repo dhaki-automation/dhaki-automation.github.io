@@ -12065,3 +12065,12 @@ CUSTOM VALUES
 	padding: 20px; /* Optional: Add padding to improve spacing */
 	border-radius: 10px; /* Optional: Adds rounded corners */
 }
+
+/* ==== Dhaki: Process Section Two tweaks ==== */
+
+/* Make step subtitles white */
+.process-section-two h5{
+  color:#ffffff;
+  font-weight:600;       /* optional, matches your premium tone */
+  margin-bottom:8px;     /* keeps vertical rhythm tight */
+}
