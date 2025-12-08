@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dhaki - Smart Automation Solutions. Contact Andres for inquiries.">
+    <title>Andres | Dhaki</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Canvas for Particles -->
+    <canvas id="particle-canvas"></canvas>
+
+    <main class="card-container">
+        <!-- Glass Card -->
+        <div class="glass-card">
+
+            <!-- Banner -->
+            <div class="banner-box">
+                <img src="assets/banner.png" alt="Header Banner" class="banner-img">
+                <!-- <div class="company-badge">
+                    <img src="../images/dhaki-logo-600-600.png" alt="Dhaki Logo">
+                </div> -->
+            </div>
+
+            <!-- Profile Image -->
+            <div class="profile-section">
+                <div class="profile-pic-box">
+                    <img src="assets/profile.jpg" alt="Andres Profile" class="profile-pic">
+                </div>
+            </div>
+
+            <!-- Header Info -->
+            <header class="header">
+                <div class="profile-info">
+                    <h1 class="name">Andres Bolivar</h1>
+                    <p class="role role-primary">Co-Founder</p>
+                    <p class="role role-secondary">Head of Technology and Innovation</p>
+                    <p class="company">Dhaki Technologies</p>
+                </div>
+            </header>
+
+            <!-- Actions -->
+            <section class="actions">
+                <a href="tel:+971525673553" class="action-btn" aria-label="Call Andres">
+                    <div class="icon-box"><i class="fas fa-phone"></i></div>
+                    <span>Call</span>
+                </a>
+                <a href="mailto:andres@dhaki.ai" class="action-btn" aria-label="Email Andres">
+                    <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                    <span>Email</span>
+                </a>
+                <a href="https://wa.me/971525673553" class="action-btn" aria-label="WhatsApp">
+                    <div class="icon-box"><i class="fab fa-whatsapp"></i></div>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="#" class="action-btn" id="save-contact" aria-label="Save Contact">
+                    <div class="icon-box"><i class="fas fa-user-plus"></i></div>
+                    <span>Save</span>
+                </a>
+            </section>
+
+            <!-- Social/Links -->
+            <section class="links-list">
+                <a href="https://outlook.office.com/bookwithme/user/0bdae433024644358a6b4ca06445d61e@onithub.com?anonymous&ismsaljsauthenabled&ep=plink"
+                    target="_blank" class="link-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Schedule a Consultation</span>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </a>
+                <a href="https://instagram.com/dhaki.ai" target="_blank" class="link-item">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram Profile</span>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </a>
+                <a href="https://dhaki.ai" target="_blank" class="link-item">
+                    <i class="fas fa-globe"></i>
+                    <span>Visit dhaki.ai</span>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </a>
+                <a href="#" class="link-item" id="share-toggle">
+                    <i class="fas fa-qrcode"></i>
+                    <span>Share Details</span>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </a>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p>Luxury automation that thinks for you</p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Dubai, UAE</p>
+            </footer>
+        </div>
+    </main>
+
+    <!-- QR Modal -->
+    <div class="modal" id="qr-modal">
+        <div class="modal-content glass-card">
+            <span class="close-btn">&times;</span>
+            <h3>Scan to Connect</h3>
+            <div class="qr-placeholder">
+                <!-- In a real app, generate this dynamically or use an img -->
+                <img src="assets/andres-dhaki-qr.svg" alt="Andres Profile" class="fas fa-qrcode fa-5x">
+            </div>
+            <p>dhaki.ai/andres</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
