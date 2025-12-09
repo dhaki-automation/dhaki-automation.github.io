@@ -1,853 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <title>Dhaki Automation</title>
+    <!-- Website crafted by Andres Bolivar  https://andresbolivar.me -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhaki Technologies</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
 
-    <!-- Stylesheets -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="plugins/revolution/css/settings.css" rel="stylesheet" type="text/css"><!-- REVOLUTION SETTINGS STYLES -->
-    <link href="plugins/revolution/css/layers.css" rel="stylesheet" type="text/css"><!-- REVOLUTION LAYERS STYLES -->
-    <link href="plugins/revolution/css/navigation.css" rel="stylesheet" type="text/css"><!-- REVOLUTION NAVIGATION STYLES -->
+    <meta name="description"
+        content="Dhaki Technologies elevates how people live by blending luxury, simplicity, and intelligent automation into every environment in Dubai and UAE.">
 
-    <!-- Floating WhatsApp button -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
 
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-
-    <!-- Responsive -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EBEY2258N5"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-EBEY2258N5');
-    </script>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
-<div class="page-wrapper color-scheme-orange">
-
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="cws_loader">
-            <span>LOADING...</span>
-            <div class="hex"></div>
-            <div class="hex"></div>
-            <div class="hex"></div>
-            <div class="hex"></div>
-            <div class="hex"></div>
-            <div class="hex"></div>
-            <div class="hex"></div>
-        </div>
-    </div>
-
-    <!-- Floating WhatsApp-->
-    <a href="https://api.whatsapp.com/send?phone=971504619202&text=Hi%21%20I%20need%20your%20automation%20services" class="float" target="_blank">
-        <i class="fab fa-whatsapp my-float"></i>
-    </a>
-    
-    <!-- Main Header-->
-    <header class="main-header">
-        <!-- Main box -->
-        <div class="main-box">
-            <div class="menu-box">
-                <div class="logo"><a href="index.html"><img src="images/dhaki-wordmark.png" alt="Dhaki logo" style="height: 40px;"></a></div>
-
-                <!--Nav Box-->
-                <div class="nav-outer">
-                    <!-- Main Menu -->
-                    <nav class="main-menu navbar-expand-md navbar-light">
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navigation clearfix">
-                                <li>
-                                    <a href="index.html">
-                                        <span>home</span>
-                                    </a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#services"><span>Services</span></a>
-                                    <ul>
-                                        <li><a href="smart-homes.html">Smart Homes</a></li>
-                                        <li><a href="smart-offices.html">Smart Offices</a></li>
-                                        <li><a href="smart-hotels.html">Smart Hotels</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="about.html"><span>About Us</span></a>
-                                </li>
-                                <li><a href="contact.html">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                    <!-- Main Menu End-->
-                     
-                </div>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="assets/LogoText.png" alt="Dhaki Logo" class="logo">
             </div>
-        </div>
-
-        <!-- Sticky Header  -->
-        <div class="sticky-header">
-            <div class="outer-box">
-                <!--Logo-->
-                <div class="logo">
-                    <a href="index.html" title="Sticky Logo"><img src="images/dhaki-wordmark.png" alt="Dhaki logo" style="height: 40px;"></a>
-                </div>
-
-                <!--Nav Outer-->
-                <div class="nav-outer">
-                    <!-- Main Menu -->
-                    <nav class="main-menu">
-                        <!--Keep This Empty / Menu will come through Javascript-->
-                    </nav><!-- Main Menu End-->
-                </div>
-            </div>
-        </div><!-- End Sticky Menu -->
-
-        <!-- Mobile Header -->
-        <div class="mobile-header">
-            <div class="logo"><a href="index.html"><img src="images/dhaki-wordmark.png" alt="Dhaki logo" style="height: 40px;"></a></div>
-
-            <!--Nav Box-->
-            <div class="nav-outer clearfix">
-                <!--Keep This Empty / Menu will come through Javascript-->
-            </div>
-        </div>
-
-        <!-- Mobile Menu  -->
-        <div class="mobile-menu">            
-            <nav class="menu-box">
-                <div class="nav-logo"><a href="index.html"><img src="images/dhaki-wordmark.png" alt="Dhaki logo" style="height: 40px;"></a></div> 
-                <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
-            </nav>
-        </div><!-- End Mobile Menu -->
-
-        <!-- Header Search -->
-        <div class="search-popup">
-            <span class="search-back-drop"></span>
-            
-            <div class="search-inner">
-                <button class="close-search"><span class="fa fa-times"></span></button>
-                <form method="post" action="blog-showcase.html">
-                    <div class="form-group">
-                        <input type="search" name="search-field" value="" placeholder="Search..." required="">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <!-- End Header Search -->
-
-    </header>
-    <!--End Main Header -->
-    
-    <!--Main Slider-->
-    <section class="main-slider">
-        <div class="rev_slider_wrapper fullwidthbanner-container"  id="rev_slider_three_wrapper" data-source="gallery">
-            <div class="rev_slider fullwidthabanner" id="rev_slider_three" data-version="5.4.1">
+            <nav class="nav">
                 <ul>
-                    <li data-index="rs-4" data-transition="zoomout" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="850"  data-thumb=""  data-delay="5999"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                    <li><a href="#philosophy">Philosophy</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="https://outlook.office.com/book/LuxurySmartAutomations@onithub.com/?ismsaljsauthenabled"
+                            target="_blank" class="btn-nav">Book Consultation</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
 
-                    <!-- MAIN IMAGE -->
-                    <img src="images/cover-1920x1080.jpg"  alt="" title="Energy Management"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                    <!-- LAYERS -->
-
-                    <!-- LAYER NR. 1 -->
-                    <div class="tp-caption   tp-resizeme" 
-                         id="slide-4-layer-40" 
-                         data-x="center" data-hoffset="" 
-                         data-y="center" data-voffset="" 
-                        data-width="['full-proportional','full-proportional','full-proportional','full-proportional']"
-                        data-height="['full-proportional','full-proportional','full-proportional','full-proportional']"
-                        data-type="image" 
-                        data-basealign="slide" 
-                        data-responsive_offset="on" 
-                        data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                        data-textAlign="['inherit','inherit','inherit','inherit']"
-                        data-paddingtop="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingbottom="[0,0,0,0]"
-                        data-paddingleft="[0,0,0,0]"
-                        style="z-index: 5;background-color:rgba(36,30,27,0.7);"><img src="images/main-slider/pattern/3.png" alt="" data-ww="full-proportional" data-hh="full-proportional" width="1920" height="1080" data-no-retina> </div>
-
-                    <!-- LAYER NR. 2 -->
-                    <div class="tp-caption   tp-resizeme" 
-                         id="slide-4-layer-39" 
-                         data-x="right" data-hoffset="300" 
-                         data-y="130" 
-                        data-width="['none','none','none','none']"
-                        data-height="['none','none','none','none']"
-                        data-type="image" 
-                        data-responsive_offset="on" 
-                        data-frames='[{"delay":500,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
-                        data-textAlign="['inherit','inherit','inherit','inherit']"
-                        data-paddingtop="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingbottom="[0,0,0,0]"
-                        data-paddingleft="[0,0,0,0]"
-                        style="z-index: 6;"><img src="images/dhaki-logo-600-600.png" alt="" data-ww="676px" data-hh="676px" width="676" height="676" data-no-retina> </div>
-
-                    <!-- LAYER NR. 3 -->
-                    <div class="tp-caption   tp-resizeme" 
-                         id="slide-4-layer-31" 
-                         data-x="right" data-hoffset="1000" 
-                         data-y="center" data-voffset="-130" 
-                        data-width="['623']"
-                        data-height="['auto']"
-                        data-type="text" 
-                        data-responsive_offset="on" 
-                        data-frames='[{"delay":500,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
-                        data-textAlign="['right','right','right','right']"
-                        data-paddingtop="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingbottom="[0,0,0,0]"
-                        data-paddingleft="[0,0,0,0]"
-                        style="z-index: 7; min-width: 623px; max-width: 623px; white-space: normal; font-size: 72px; line-height: 72px; font-weight: 800; color: rgba(255,255,255,1);font-family:Catamaran;text-transform:uppercase;">Smart Automation</div>
-
-                    <!-- LAYER NR. 4 -->
-                    <div class="tp-caption   tp-resizeme" 
-                         id="slide-4-layer-33" 
-                         data-x="right" data-hoffset="1000" 
-                         data-y="center" data-voffset="" 
-                        data-width="['auto']"
-                        data-height="['auto']"
-                        data-type="text" 
-                        data-responsive_offset="on" 
-                        data-frames='[{"delay":500,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
-                        data-textAlign="['right','right','right','right']"
-                        data-paddingtop="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingbottom="[0,0,0,0]"
-                        data-paddingleft="[0,0,0,0]"
-                        style="z-index: 8; white-space: nowrap; font-size: 24px; line-height: 40px; font-weight: 400; color: rgba(255,255,255,1);font-family:Catamaran;">Powered by <a href="https://onithub.com" target="_blank" style="color: #1BC8E6;">ON IT HUB</a></div>
-
-                    <!-- LAYER NR. 5 -->
-                    <div class="tp-caption rev-btn  tp-resizeme" 
-                         id="slide-4-layer-36" 
-                         data-x="right" data-hoffset="1000" 
-                         data-y="center" data-voffset="100" 
-                        data-width="['auto']"
-                        data-height="['auto']"
-                        data-type="button" 
-                        data-actions='[{"event":"click","action":"scrollbelow","offset":"px","delay":"","speed":"700","ease":"Linear.easeNone"}]'
-                        data-responsive_offset="on" 
-                        data-frames='[{"delay":500,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:#fff;bg:linear-gradient(90deg, #1B67C6 0%, #1BC8E6 50%, #21D1C3 100%);"}]'
-                        data-textAlign="['right','right','right','right']"
-                        data-paddingtop="[20,20,20,20]"
-                        data-paddingright="[50,50,50,50]"
-                        data-paddingbottom="[20,20,20,20]"
-                        data-paddingleft="[50,50,50,50]"
-                        style="z-index: 9; white-space: nowrap; font-size: 16px; line-height: 17px; font-weight: 700; color: #fff; font-family:Catamaran; background: linear-gradient(90deg, #21D1C3 0%, #1BC8E6 50%, #1B67C6 100%); border-color: #1B67C6; border-style:solid; border-width:0px; border-radius:30px 30px 30px 30px; outline:none; box-shadow:none; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; cursor:pointer;">GO SMART NOW </div>
-                </li>
-                <!-- SLIDE  -->
-                <li data-index="rs-5" data-transition="zoomout" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="850"  data-thumb="http://ingenious.cwsthemes.com/wp-content/uploads/revslider/energy/e-mnt-sl2-100x50.jpg"  data-delay="5999"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                    <!-- MAIN IMAGE -->
-                    <img src="images/cover2-1920x1080.jpg"  alt="" title="Energy Management"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                    <!-- LAYERS -->
-
-                    <!-- LAYER NR. 6 -->
-                    <div class="tp-caption   tp-resizeme" 
-                         id="slide-5-layer-40" 
-                         data-x="center" data-hoffset="" 
-                         data-y="center" data-voffset="" 
-                        data-width="['full-proportional','full-proportional','full-proportional','full-proportional']"
-                        data-height="['full-proportional','full-proportional','full-proportional','full-proportional']"
-                        data-type="image" 
-                        data-basealign="slide" 
-                        data-responsive_offset="on" 
-                        data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                        data-textAlign="['inherit','inherit','inherit','inherit']"
-                        data-paddingtop="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingbottom="[0,0,0,0]"
-                        data-paddingleft="[0,0,0,0]"
-                        style="z-index: 5;background-color:rgba(36,30,27,0.7);"><img src="images/main-slider/pattern/3.png" alt="" data-ww="full-proportional" data-hh="full-proportional" width="1920" height="1080" data-no-retina> </div>
-
-                    <!-- LAYER NR. 7 -->
-                    <div class="tp-caption   tp-resizeme" 
-                         id="slide-5-layer-39" 
-                         data-x="right" data-hoffset="300" 
-                         data-y="130" 
-                        data-width="['none','none','none','none']"
-                        data-height="['none','none','none','none']"
-                        data-type="image" 
-                        data-responsive_offset="on" 
-                        data-frames='[{"delay":500,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
-                        data-textAlign="['inherit','inherit','inherit','inherit']"
-                        data-paddingtop="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingbottom="[0,0,0,0]"
-                        data-paddingleft="[0,0,0,0]"
-                        style="z-index: 6;"><img src="images/dhaki-logo-600-600.png" alt="" data-ww="676px" data-hh="676px" width="676" height="676" data-no-retina> </div>
-
-                    <!-- LAYER NR. 8 -->
-                    <div class="tp-caption   tp-resizeme" 
-                         id="slide-5-layer-31" 
-                         data-x="right" data-hoffset="1000" 
-                         data-y="center" data-voffset="-130" 
-                        data-width="['623']"
-                        data-height="['auto']"
-                        data-type="text" 
-                        data-responsive_offset="on" 
-                        data-frames='[{"delay":500,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
-                        data-textAlign="['right','right','right','right']"
-                        data-paddingtop="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingbottom="[0,0,0,0]"
-                        data-paddingleft="[0,0,0,0]"
-                        style="z-index: 7; min-width: 623px; max-width: 623px; white-space: normal; font-size: 72px; line-height: 72px; font-weight: 800; color: rgba(255,255,255,1);font-family:Catamaran;text-transform:uppercase;">Smart Automation</div>
-
-                    <!-- LAYER NR. 9 -->
-                    <div class="tp-caption   tp-resizeme" 
-                         id="slide-5-layer-33" 
-                         data-x="right" data-hoffset="1000" 
-                         data-y="center" data-voffset="" 
-                        data-width="['auto']"
-                        data-height="['auto']"
-                        data-type="text" 
-                        data-responsive_offset="on" 
-                        data-frames='[{"delay":500,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
-                        data-textAlign="['right','right','right','right']"
-                        data-paddingtop="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingbottom="[0,0,0,0]"
-                        data-paddingleft="[0,0,0,0]"
-                        style="z-index: 8; white-space: nowrap; font-size: 24px; line-height: 40px; font-weight: 400; color: rgba(255,255,255,1);font-family:Catamaran;">Powered by <a href="https://onithub.com" target="_blank" style="color: #1BC8E6;">ON IT HUB</a></div>
-
-                    <!-- LAYER NR. 10 -->
-                    <div class="tp-caption rev-btn  tp-resizeme" 
-                         id="slide-5-layer-36" 
-                         data-x="right" data-hoffset="1000" 
-                         data-y="center" data-voffset="100" 
-                        data-width="['auto']"
-                        data-height="['auto']"
-                        data-type="button" 
-                        data-actions='[{"event":"click","action":"scrollbelow","offset":"px","delay":"","speed":"700","ease":"Linear.easeNone"}]'
-                        data-responsive_offset="on" 
-                        data-frames='[{"delay":500,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:#fff;bg:linear-gradient(90deg, #1B67C6 0%, #1BC8E6 50%, #21D1C3 100%);"}]'
-                        data-textAlign="['right','right','right','right']"
-                        data-paddingtop="[20,20,20,20]"
-                        data-paddingright="[50,50,50,50]"
-                        data-paddingbottom="[20,20,20,20]"
-                        data-paddingleft="[50,50,50,50]"
-                        style="z-index: 9; white-space: nowrap; font-size: 16px; line-height: 17px; font-weight: 700; color: #fff; font-family:Catamaran; background: linear-gradient(90deg, #21D1C3 0%, #1BC8E6 50%, #1B67C6 100%); border-color: #1B67C6; border-style:solid; border-width:0px; border-radius:30px 30px 30px 30px; outline:none; box-shadow:none; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; cursor:pointer;">GO SMART NOW</div>
-                </li>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-placeholder">
+            <video autoplay muted loop playsinline poster="assets/hero-image.jpg"
+                style="width: 100%; height: 100%; object-fit: cover; position: absolute; top:0; left:0; z-index: -2;">
+                <source src="assets/hero-video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="bounce-in">Elevate Your Lifestyle<br>With <span class="gradient-text">Dhaki Technologies</span>
+            </h1>
+            <p class="fade-in-up">Blending luxury, simplicity and intelligent automation into every environment.</p>
+            <div class="hero-btns fade-in-up delay-1">
+                <a href="https://outlook.office.com/book/LuxurySmartAutomations@onithub.com/?ismsaljsauthenabled"
+                    target="_blank" class="btn-primary">Schedule Consultation</a>
+                <a href="#solutions" class="btn-secondary">Explore Solutions</a>
             </div>
         </div>
     </section>
-    <!--End Main Slider-->
 
-    <!-- Features Section Three -->
-    <section class="features-section-three">
-        <!-- Background Layers -->
-        <div class="background-layers">
-            <div class="cws-image-bg" style="background-image: url(images/smart-homes-1.png)">
-                <div class="cws-overlay-bg"></div>
-            </div>
-            <div class="cws-triangle-overlay bottom-left"></div>
-        </div>
-
-        <div class="auto-container">
-            <div class="row">
-                <!-- Upper Column -->
-                <div class="upper-column col-lg-6 col-md-12 col-sm-12">
-                    <div class="inner-column">
-                        <div class="sec-title light">
-                            <h3>ELEVATE YOUR LIFESTYLE</h3>
-                            <div class="text">We deliver the pinnacle of smart automation, offering an unmatched lifestyle that simplifies your daily routines and enhances your quality of life. Our solutions prioritize security and privacy, giving you remote control over your entire environment. Enjoy the ease of use and time-saving benefits, knowing that your home or office is in safe, innovative hands.</div>
-                        </div>
-
-                        <div class="row">
-                            <!-- Feature BLock -->
-                            <div class="feature-block-six col-lg-4 col-md-6 col-sm-12">
-                                <div class="inner-box">
-                                    <div class="icon-box"><span class="icon flaticon-smart-home-2"></span></div>
-                                    <h4>Smart Control</h4>
-                                    <div class="text">Easy of use for a smooth and unified experience.</div>
-                                </div>
-                            </div>
-
-                            <!-- Feature BLock -->
-                            <div class="feature-block-six col-lg-4 col-md-6 col-sm-12">
-                                <div class="inner-box">
-                                    <div class="icon-box"><span class="icon flaticon-shield-1"></span></div>
-                                    <h4>Smart Security</h4>
-                                    <div class="text">Top-notch security to protect your home and data.</div>
-                                </div>
-                            </div>
-
-                            <!-- Feature BLock -->
-                            <div class="feature-block-six col-lg-4 col-md-6 col-sm-12">
-                                <div class="inner-box">
-                                    <div class="icon-box"><span class="icon flaticon-eco-energy"></span></div>
-                                    <h4>Smart Energy</h4>
-                                    <div class="text">Optimize routines to save time and energy.</div>
-                                </div>
-                            </div>
-                        </div>
+    <!-- Philosophy Section -->
+    <section id="philosophy" class="philosophy section-padding">
+        <div class="container">
+            <div class="philosophy-grid">
+                <div class="philosophy-text">
+                    <h2 class="section-title">Our Philosophy</h2>
+                    <p class="lead">True Smartness is Invisible.</p>
+                    <p>
+                        We believe a smart space isn't about walls full of digital panels or constantly using your phone
+                        as a remote.
+                        It is a space that <strong>thinks</strong>.
+                    </p>
+                    <p>
+                        A Dhaki sanctuary knows your routines and reacts to them. It senses the environment, time, and
+                        presence to
+                        minimize interaction, letting you live effortlessly while it handles the rest.
+                    </p>
+                    <div class="meaning-box">
+                        <h3>"Dhaki"</h3>
+                        <p>Arabic (<strong>ذكي</strong>) for <strong>Smart</strong> or <strong>Intelligent</strong>.</p>
+                        <p style="margin-top: 10px; font-size: 0.9rem; opacity: 0.8;">
+                            We chose this name to honor the region we serve and to define our commitment:
+                            creating spaces that possess true, intuitive intelligence, not just connectivity.
+                        </p>
                     </div>
                 </div>
-
-                <div class="lower-column col-lg-12 col-md-12 col-sm-12">
-
-                    <div class="row" style="display: flex; align-items: center;">
-                        <!-- Image Column -->
-                        <div class="image-column col-lg-6 col-md-12">
-                            <figure class="image"><img src="images/our-technologies.png" alt=""></figure>
-                        </div>
-                        <!-- Content Column -->
-                        <div class="content-column col-lg-6 col-md-12">
-                            <div class="inner-column dim-frame">
-                                <div class="sec-title light">
-                                    <h3>OUR SOLUTIONS</h3>
-                                    <div class="text">We provide high-quality smart automation solutions for any facility, ensuring seamless integration and top performance across all ecosystems. We prioritize security and privacy, tailoring the best automation experiences to our clients’ needs.</div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="philosophy-visual">
+                    <div class="visual-placeholder glass-card">
+                        <img src="assets/philosophy.jpg" alt="Philosophy Visual"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End Features Section Three -->
 
-    <!-- Services Section -->
-    <section class="services-section style-two" id="services">
-        <div class="auto-container">
-            <div class="sec-title text-center">
-                <h2>SERVICES</h2>
-            </div>
-
-            <div class="row">
-                <!-- Service Block -->
-                <div class="service-block col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <div class="icon-box"><span class="icon flaticon-family"></span></div>
-                            <figure class="image"><img src="images/smart-homes.png" alt=""></figure>
-                            <div class="overlay">
-                                <div class="desc">Effortless control and comfort for modern living.</div>
-                            </div>
-                        </div>
-                        <div class="lower-content">
-                            <h4>Smart Homes</h4>
-                            <div class="text">Transform your living space with seamless and secure smart automation.</div>
-                            <div class="btn-box"><a href="smart-homes.html" class="theme-btn btn-style-two dark-alt">KNOW ALL</a></div>
-                        </div>
-                    </div>
+    <!-- Core Principles -->
+    <section id="principles" class="principles section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Core Principles</h2>
+            <div class="principles-grid">
+                <!-- Principle 1 -->
+                <div class="principle-card">
+                    <div class="icon-box"><i class="fas fa-gem"></i></div>
+                    <h3>Luxury through Simplicity</h3>
+                    <p>A space feels premium when everything works quietly, smoothly and without friction.</p>
                 </div>
-
-
-                <!-- Service Block -->
-                <div class="service-block col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <div class="icon-box"><span class="icon flaticon-briefcase"></span></div>
-                            <figure class="image"><img src="images/smart-offices.png" alt=""></figure>
-                            <div class="overlay">
-                                <div class="desc">Streamline operations with advanced office automation.</div>
-                            </div>
-                        </div>
-                        <div class="lower-content">
-                            <h4>Smart Offices</h4>
-                            <div class="text">Enhance productivity with intelligent, automated office environments.</div>
-                            <div class="btn-box"><a href="smart-offices.html" class="theme-btn btn-style-two dark-alt">KNOW ALL</a></div>
-                        </div>
-                    </div>
+                <!-- Principle 2 -->
+                <div class="principle-card">
+                    <div class="icon-box"><i class="fas fa-brain"></i></div>
+                    <h3>Intelligence that Adapts</h3>
+                    <p>Automation should adjust to people instead of forcing them to adjust to it. Personalized routines
+                        and context awareness.</p>
                 </div>
-
-
-                <!-- Service Block -->
-                <div class="service-block col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <div class="icon-box"><span class="icon flaticon-manager"></span></div>
-                            <figure class="image"><img src="images/smart-hotels.png" alt=""></figure>
-                            <div class="overlay">
-                                <div class="desc">Redefine hospitality with state-of-the-art smart technology.</div>
-                            </div>
-                        </div>
-                        <div class="lower-content">
-                            <h4>Smart Hotels</h4>
-                            <div class="text">Elevate guest experiences with cutting-edge smart technology.</div>
-                            <div class="btn-box"><a href="smart-hotels.html" class="theme-btn btn-style-two dark-alt">KNOW ALL</a></div>
-                        </div>
-                    </div>
+                <!-- Principle 3 -->
+                <div class="principle-card">
+                    <div class="icon-box"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Privacy & Security First</h3>
+                    <p>Intelligent environments must protect users. We prioritize secure platforms and local processing.
+                    </p>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!--End Services Section -->
-
-    <!-- Process Section Two -->
-    <section class="process-section-two">
-        <!-- Background Layers -->
-        <div class="background-layers">
-            <div class="cws-image-bg" style="background-image: url(images/home-automation-1920x1000.jpg)">
-                <div class="cws-overlay-bg"></div>
-            </div>
-            <div class="cws-triangle-overlay top-left"></div>
-        </div>
-
-        <div class="auto-container">
-            <div class="sec-title text-center light">
-                <h2>SMART IMPLEMENTATION</h2>
-                <div class="text">We pride ourselves on delivering cutting-edge smart automation systems with unmatched efficiency and precision. Our three-step process is designed to provide you with a seamless experience from concept to completion.</div>
-            </div>
-
-            <div class="row">
-                <!-- Process BLock -->
-                <div class="process-block col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box active">
-                        <div class="icon-box">
-                            <span class="process_line hide-sm">
-                                <span class="process_line_active" style="width:100%"></span>
-                                <span class="process_line_circle"></span>
-                            </span>
-                            <span class="icon flaticon-chat"></span>
-                        </div>
-                        <h4>Step 1</h4>
-                        <h5>Discovery Consultation</h5>
-                        <div class="text">We begin by understanding your space, lifestyle, and vision. Our specialists meet you in person or virtually to define how automation can enhance your everyday life.</div>
-                    </div>
+                <!-- Principle 4 -->
+                <div class="principle-card">
+                    <div class="icon-box"><i class="fas fa-tools"></i></div>
+                    <h3>Perfect Execution</h3>
+                    <p>Installation and design are treated as craftsmanship. Premium attention to detail.</p>
                 </div>
-
-                <!-- Process BLock -->
-                <div class="process-block col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box active">
-                        <div class="icon-box">
-                            <span class="process_line hide-sm">
-                                <span class="process_line_active" style="width:100%"></span>
-                                <span class="process_line_circle"></span>
-                            </span>
-                            <span class="icon flaticon-house-sketch"></span>
-                        </div>
-                        <h4>Step 2</h4>
-                        <h5>Smart Design & Proposal</h5>
-                        <div class="text">We design a tailored automation plan that blends technology with your architecture and aesthetic. You'll receive visual layouts, device recommendations, and transparent pricing.</div>
-                    </div>
+                <!-- Principle 5 -->
+                <div class="principle-card">
+                    <div class="icon-box"><i class="fas fa-user"></i></div>
+                    <h3>Human Centered Design</h3>
+                    <p>Intuitive experiences that even non-technical users can enjoy, measured by the Home Approval
+                        Factor.</p>
                 </div>
-
-                <!-- Process BLock -->
-                <div class="process-block col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box active">
-                        <div class="icon-box">
-                            <span class="process_line hide-sm">
-                                <span class="process_line_active" style="width:100%"></span>
-                                <span class="process_line_circle"></span>
-                            </span>
-                            <span class="icon flaticon-electrician"></span>
-                        </div>
-                        <h4>Step 3</h4>
-                        <h5>Professional Installation</h5>
-                        <div class="text">Our certified team installs every component with precision, collaborating seamlessly with your contractor or interior designer to ensure a clean, elegant finish.</div>
-                    </div>
+                <!-- Principle 6 -->
+                <div class="principle-card">
+                    <div class="icon-box"><i class="fas fa-home"></i></div>
+                    <h3>Harmony with Architecture</h3>
+                    <p>Solutions that respect the visual identity of the space, using discreet hardware.</p>
                 </div>
-
-                <!-- Process BLock -->
-                <div class="process-block col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box active">
-                        <div class="icon-box">
-                            <span class="process_line hide-sm">
-                                <span class="process_line_active" style="width:100%"></span>
-                                <span class="process_line_circle"></span>
-                            </span>
-                            <span class="icon flaticon-settings"></span>
-                        </div>
-                        <h4>Step 4</h4>
-                        <h5>Configuration & Fine-Tuning</h5>
-                        <div class="text">Our engineers meticulously program every detail, scenes, automations, and ecosystem integration (Apple Home, Google, Alexa), to guarantee optimal performance and ease of use.</div>
-                    </div>
+                <!-- Principle 7 -->
+                <div class="principle-card">
+                    <div class="icon-box"><i class="fas fa-infinity"></i></div>
+                    <h3>Long Term Value</h3>
+                    <p>Avoiding disposable solutions. Building environments that remain stable and functional for years.
+                    </p>
                 </div>
-
-                <!-- Process BLock -->
-                <div class="process-block col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box active">
-                        <div class="icon-box">
-                            <span class="process_line hide-sm">
-                                <span class="process_line_active" style="width:100%"></span>
-                                <span class="process_line_circle"></span>
-                            </span>
-                            <span class="icon flaticon-smart-home-2"></span>
-                        </div>
-                        <h4>Step 5</h4>
-                        <h5>Personal Handover & Training</h5>
-                        <div class="text">We guide you through your new smart home experience, ensuring you know how to control, customize, and expand your system effortlessly.</div>
-                    </div>
+                <!-- Principle 8 -->
+                <div class="principle-card">
+                    <div class="icon-box"><i class="fas fa-link"></i></div>
+                    <h3>Seamless Compatibility</h3>
+                    <p>We work with most smart devices in the market, taking advantage of what you already own to
+                        maximize value.</p>
                 </div>
-
-                <!-- Process BLock -->
-                <div class="process-block col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box active">
-                        <div class="icon-box">
-                            <span class="icon flaticon-on-time-support"></span>
-                        </div>
-                        <h4>Step 6</h4>
-                        <h5>Aftercare & Continuous Support</h5>
-                        <div class="text">Your Dhaki environment evolves with you. We offer remote monitoring, updates, and priority maintenance to keep your system secure, efficient, and future-ready.</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="btn-box text-center"><a href="#contact-us" class="theme-btn large btn-style-one bg-caribbean">Start your project</a></div>
-        </div>
-    </section>
-    <!--End Process Section -->
-
-    <!-- Products Section -->
-    <section class="products-section">
-        <!-- Background Layers -->
-        <div class="background-layers">
-            <div class="cws-image-bg" style="background-image: url(https://via.placeholder.com/1920x1000)">
-                <div class="cws-overlay-bg"></div>
-            </div>
-            <div class="cws-triangle-overlay bottom-left"></div>
-            <div class="cws-triangle-overlay bottom-right"></div>
-        </div>
-
-        <div class="auto-container">
-
-            <div class="sec-title text-center light">
-                <h2>SOME OF OUR TOP RATED SOLUTIONS</h2>
-                <div class="text">Discover our range of smart automation services designed to enhance comfort, security, and convenience. From lighting and sound to climate control and access management, these are just a few of the tailored solutions we offer to elevate your space.</div>
-            </div>
-
-            <div class="row">
-                <!-- Product Block -->
-                <div class="product-block col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="images/smart-lightning-290x290.jpg" alt=""></figure>
-                        </div>
-                        <div class="lower-content">
-                            <h3>Smart Ambient Lighting</h3>
-                            <div class="text">Customizable lighting that adapts to your mood and enhances energy efficiency.</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product Block -->
-                <div class="product-block col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="images/smart-sound-290x290.jpg" alt=""></figure>
-                        </div>
-                        <div class="lower-content">
-                            <h3>Smart Ambient Sound</h3>
-                            <div class="text">Seamless audio tailored to every room for an immersive experience.</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product Block -->
-                <div class="product-block col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="images/smart-climate-290x290.jpg" alt=""></figure>
-                        </div>
-                        <div class="lower-content">
-                            <h3>Smart Climate Control</h3>
-                            <div class="text">Personalized comfort with intelligent temperature and air quality management.</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product Block -->
-                <div class="product-block col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="images/smart-access-290x290.jpg" alt=""></figure>
-                        </div>
-                        <div class="lower-content">
-                            <h3>Smart Access Control</h3>
-                            <div class="text">Keyless entry and enhanced security with sleek, modern design.</div>
-                        </div>
-                    </div>
+                <!-- Principle 9 -->
+                <div class="principle-card">
+                    <div class="icon-box"><i class="fas fa-globe"></i></div>
+                    <h3>Universal Intelligence</h3>
+                    <p>From intimate homes to expansive hotels & offices. We design any space to be a smart space.</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End Products Section -->
 
-    <!-- Contact Map Section -->
-    <section class="contact-map-section style-two" id="contact-us">
-        <!-- Background Layers -->
-        <div class="background-layers">
-            <div class="cws-triangle-overlay top-left"></div>
-            <div class="cws-triangle-overlay top-right"></div>
-            <div>
-                <div class="cws-overlay-bg bg-orange" id="contact-section"></div>
-            </div>
-            <div class="map-outer">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231281.00129719832!2d55.06234145650278!3d25.07593108612228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai!5e0!3m2!1sen!2sae!4v1723404945943!5m2!1sen!2sae" height="450" style="border:0; width:100%;"></iframe>
-            </div>
-        </div>
+    <!-- Solutions -->
+    <section id="solutions" class="solutions section-padding">
+        <div class="container">
+            <h2 class="section-title text-center">Bespoke Intelligence</h2>
+            <p class="text-center section-subtitle" style="max-width: 800px; margin-left: auto; margin-right: auto;">
+                We don't believe in preconfigured packages. We listen to your unique needs, creating tailored solutions
+                that respect your existing equipment and budget. Whether for <strong>Smart Homes, Offices, or
+                    Hotels</strong>,
+                we suggest the best brands to achieve the specialized "Home Approval Factor".
+            </p>
 
-        <div class="auto-container">
-            <div class="row">
-                <div class="content-column col-lg-6 col-md-12 col-sm-12 offset-6">
-                    <div class="inner-column">
-                        <div class="sec-title">
-                            <h2 class="contact-text">HOW TO REACH US</h2>
-                            <div class="contact-text">Making smart living easy and secure, we’re just a message away to assist you!</div>
-                        </div>
-                        <div class="contact-info row">
-                            <div class="contact-block col-lg-6 col-md-6 col-sm-12">
-                                <div class="inner">
-                                    <span class="icon fa fa-map-signs"></span>
-                                    <h5 class="contact-text">Location</h5>
-                                    <p class="contact-text">United Arab Emirates</p>
-                                </div>
-                            </div>
-
-                            <div class="contact-block col-lg-6 col-md-6 col-sm-12">
-                                <div class="inner">
-                                    <a href="tel:+971504619202" target="_blank">
-                                        <span class="icon fa fa-phone"></span>
-                                        <h5 class="contact-text">Phone</h5>
-                                        <p class="contact-text">(+971) 50 461 9202</p>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="contact-block col-lg-6 col-md-6 col-sm-12">
-                                <div class="inner">
-                                    <a href="mailto:solutions@dhaki.ai" target="_blank">
-                                        <span class="icon fa fa-envelope"></span>
-                                        <h5 class="contact-text">Email</h5>
-                                        <p class="contact-text">solutions@dhaki.ai</p>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="contact-block col-lg-6 col-md-6 col-sm-12">
-                                <div class="inner">
-                                    <a href="https://wa.me/971504619202" target="_blank">
-                                        <span class="icon fab fa-whatsapp"></span>
-                                        <h5 class="contact-text">WhatsApp</h5>
-                                        <p class="contact-text">(+971) 50 461 9202</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="solutions-grid">
+                <div class="solution-item">
+                    <div class="solution-placeholder">Smart Homes</div>
+                    <img src="assets/smart-home-thumb.jpg" alt="Smart Homes"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="solution-item">
+                    <div class="solution-placeholder">Smart Offices</div>
+                    <img src="assets/smart-office-thumb.jpg" alt="Smart Offices"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="solution-item">
+                    <div class="solution-placeholder">Smart Hotels</div>
+                    <img src="assets/smart-hotel-thumb.jpg" alt="Smart Hotels"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="solution-item">
+                    <div class="solution-placeholder">Smart Security</div>
+                    <img src="assets/smart-security-thumb.jpg" alt="Smart Security"
+                        style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
             </div>
         </div>
     </section>
-    <!--End Subscribe Section -->
 
-    <!-- Main Footer -->
-    <footer class="main-footer">
-        <div class="auto-container">
-            <!--Widgets Section-->
-            <div class="widgets-section">
-                <div class="row">
-                    <!--Footer Column-->
-                    <div class="footer-column col-lg-4 col-md-6 col-sm-12">
-                        <div class="footer-widget about-widget">
-                            <h4 class="widget-title">DHAKI AUTOMATION</h4>
-                            <div class="widget-content">
-                                <div class="text">Provides top-quality, smart automation solutions for homes, offices, hotels and more. We prioritize security and privacy for our users.</div>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Our Process -->
+    <section id="process" class="process section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Our Journey Together</h2>
+            <p class="text-center section-subtitle">A professional path to your smart space.</p>
 
-                    <div class="footer-column col-lg-4 col-md-6 col-sm-12">
-                        <div class="footer-widget recent-posts">
-                            <h4 class="widget-title">TECHNOLOGIES</h4>
-                             <!--Footer Column-->
-                            <div class="widget-content">
-                                <li>
-                                    <i><a href="https://www.apple.com/home-app/" target="_blank"><img src="images/icons/apple-home-64x64.png"></i></a>
-                                    <i><a href="https://csa-iot.org/all-solutions/matter/" target="_blank"><img src="images/icons/matter-64x64.png"></i></a>
-                                    <i><a href="https://www.threadgroup.org" target="_blank"><img src="images/icons/thread-64x64.png"></i></a>
-                                    <i><a href="https://home.google.com/the-latest/" target="_blank"><img src="images/icons/google-home-64x64.png"></i></a>
-                                </li>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Footer Column-->
-                    <div class="footer-column col-lg-4 col-md-6 col-sm-12">
-                        <div class="footer-widget contact-widget">
-                            <h4 class="widget-title">OUR CONTACTS</h4>
-                            <div class="widget-content">
-                                <ul class="contact-list">
-                                    <li>
-                                        <i class="far fa-envelope"></i>
-                                        <a href="mialto:solutions@dhaki.ai">solutions@dhaki.ai</a>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-phone"></i> 
-                                        <a href="tel:+971504619202">(+971) 50 461 9202</a>
-                                    </li>
-                                    <li>
-                                       <div class="social-icon">
-                                           <!-- <a href="#" target="_blank"><i class="fab fa-twitter"></i></a> -->
-                                           <a href="https://instagram.com/dhaki.ai" target="_blank"><i class="fab fa-instagram"></i></a>
-                                           <!-- <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a> -->
-                                           <a href="https://wa.me/971504619202" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                                       </div> 
-                                    </li>
-                                </ul>
-                            </div>
-                        </div> 
-                    </div>
+            <div class="process-steps">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Discovery Consultation</h3>
+                    <p>We listen to your needs, lifestyle, and survey your current equipment.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Smart Design & Proposal</h3>
+                    <p>We create a tailored solution selecting the best brands for your specific goals.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Professional Installation</h3>
+                    <p>Expert wiring, device setup, and hardware installation with craftsmanship.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Configuration</h3>
+                    <p>Fine-tuning the system logic, scenes, and automations to perfection.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">5</div>
+                    <h3>Handover & Training</h3>
+                    <p>Personal walk-through to ensure you feel completely in control.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">6</div>
+                    <h3>Aftercare Support</h3>
+                    <p>Continuous support to ensure stable, long-term performance.</p>
                 </div>
             </div>
         </div>
-        
-        <!--Footer Bottom-->
-        <div class="footer-bottom">
-            <div class="auto-container">
-                <div class="copyright-text">
-                    <p><a href="index.html">Dhaki Automation</a></p>
+    </section>
+
+    <!-- Expert Team -->
+    <section id="team" class="team section-padding">
+        <div class="container">
+            <div class="team-content text-center">
+                <h2 class="section-title">Global Expertise, Personal Dedication</h2>
+                <p class="lead" style="color: var(--color-primary-blue); font-weight: 500; margin-bottom: 20px;">Led by
+                    3 Specialist Engineers</p>
+                <p style="max-width: 800px; margin: 0 auto 40px auto;">
+                    We combine world-class engineering standards with the genuine warmth and hospitality characteristic
+                    of our Latin American heritage.
+                    We believe in building relationships, not just systems.
+                    <br><br>
+                    <strong>The Best Service. The Best Solutions. The Best Satisfaction.</strong>
+                </p>
+
+                <!-- <div class="team-frames">
+                    <div class="team-member">
+                        <div class="member-frame">
+                            <img src="assets/team-member-1.jpg" alt="Team Member">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="member-name">Name Placeholder</h4>
+                        <p class="member-role">Title / Short Description</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-frame">
+                            <img src="assets/team-member-2.jpg" alt="Team Member">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="member-name">Name Placeholder</h4>
+                        <p class="member-role">Title / Short Description</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-frame">
+                            <img src="assets/team-member-3.jpg" alt="Team Member">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="member-name">Name Placeholder</h4>
+                        <p class="member-role">Title / Short Description</p>
+                    </div>
+                </div> -->
+
+                <!-- <a href="#contact" class="btn-primary">Meet the Team</a> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Client Stories</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p>"Dhaki transformed our villa into something out of a movie. The team was incredibly warm and
+                        professional."</p>
+                    <div class="author">- Customer in Jumeirah Golf States</div>
                 </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p>"During our villa renovation, Dhaki designed a complete smart solution for lights, sound,
+                        security, entertainment and climate. The result is amazing."</p>
+                    <div class="author">- Customer in Springs Villas</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p>"I didn't know I needed smart automation until I tried Dhaki. Now I can't imagine my home without
+                        it. Everything feels effortless."</p>
+                    <div class="author">- Customer in JVC</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <img src="assets/LogoText.png" alt="Dhaki" class="footer-logo filter-white">
+                    <p>Smart Automation Solutions for every space.</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Dubai, United Arab Emirates</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+971504619202">+971 50 461 9202</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:solutions@dhaki.ai">solutions@dhaki.ai</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://instagram.com/dhaki.ai" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <a href="https://outlook.office.com/book/LuxurySmartAutomations@onithub.com/?ismsaljsauthenabled"
+                            target="_blank" class="btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Schedule
+                            Consultation</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dhaki Technologies. All rights reserved.</p>
             </div>
         </div>
     </footer>
-    <!-- End Main Footer -->
 
-</div><!-- End Page Wrapper -->
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/971504619202" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-<!-- Scroll To Top -->
-<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-long-arrow-alt-up"></span></div>
-
-<script src="js/jquery.js"></script> 
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<!--Revolution Slider-->
-<script src="plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
-<script src="plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
-<script src="plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-<script src="plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-<script src="plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script src="plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script src="plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-<script src="plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-<script src="plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-<script src="plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script src="plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
-<script src="js/main-slider-script.js"></script>
-<!--Revolution Slider-->
-<script src="js/jquery.fancybox.js"></script>
-<script src="js/owl.js"></script>
-<script src="js/wow.js"></script>
-<script src="js/appear.js"></script>
-<script src="js/knob.js"></script>
-<script src="js/script.js"></script>
+    <script src="js/app.js"></script>
 </body>
+
 </html>
