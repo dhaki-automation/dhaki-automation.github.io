@@ -101,4 +101,27 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
     document.head.appendChild(styleSheet);
 
+    // Video Sequencing (Crossfade Loop)
+    const video1 = document.getElementById('hero-video-1');
+    const video2 = document.getElementById('hero-video-2');
+
+    if (video1 && video2) {
+        // Helper to switch videos
+        const switchVideo = (currentVideo, nextVideo) => {
+            nextVideo.currentTime = 0;
+            nextVideo.play().then(() => {
+                nextVideo.classList.add('active');
+                currentVideo.classList.remove('active');
+            }).catch(e => console.error("Video play error:", e));
+        };
+
+        video1.addEventListener('ended', () => {
+            switchVideo(video1, video2);
+        });
+
+        video2.addEventListener('ended', () => {
+            switchVideo(video2, video1);
+        });
+    }
+
 });

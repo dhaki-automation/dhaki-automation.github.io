@@ -54,9 +54,12 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-bg-placeholder">
-            <video autoplay muted loop playsinline poster="assets/hero-image.jpg"
-                style="width: 100%; height: 100%; object-fit: cover; position: absolute; top:0; left:0; z-index: -2;">
+            <video id="hero-video-1" class="hero-bg-video active" autoplay muted playsinline
+                poster="assets/hero-image.jpg">
                 <source src="assets/hero-video.mp4" type="video/mp4">
+            </video>
+            <video id="hero-video-2" class="hero-bg-video" muted playsinline poster="assets/hero-image-2.jpg">
+                <source src="assets/hero-video-2.mp4" type="video/mp4">
             </video>
         </div>
         <div class="hero-overlay"></div>
