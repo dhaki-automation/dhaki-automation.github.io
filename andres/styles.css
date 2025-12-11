@@ -27,6 +27,18 @@ body {
     align-items: center;
     overflow-x: hidden;
     position: relative;
+    /* Content Protection */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+img {
+    /* Content Protection */
+    -webkit-user-drag: none;
+    user-drag: none;
+    pointer-events: none;
 }
 
 /* Background Canvas */

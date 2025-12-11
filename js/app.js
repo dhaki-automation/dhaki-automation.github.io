@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     // Mobile Menu Toggle
     const menuToggle = document.querySelector('.mobile-menu-toggle');
     const nav = document.querySelector('.nav');
     const navLinks = document.querySelectorAll('.nav a');
-    
+
     if (menuToggle) {
         menuToggle.addEventListener('click', () => {
             nav.classList.toggle('active');
-            
+
             // Icon transition
             const icon = menuToggle.querySelector('i');
             if (nav.classList.contains('active')) {
@@ -25,11 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             nav.classList.remove('active');
-             if (menuToggle) {
+            if (menuToggle) {
                 const icon = menuToggle.querySelector('i');
                 icon.classList.remove('fa-times');
                 icon.classList.add('fa-bars');
-             }
+            }
         });
     });
 
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
-            
+
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 const headerHeight = document.querySelector('.header').offsetHeight;
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Elements to animate
     const animateElements = document.querySelectorAll('.principle-card, .philosophy-text, .philosophy-visual, .solution-item, .section-title');
-    
+
     animateElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(20px)';
@@ -83,14 +83,14 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('scroll', () => {
         const scrolled = window.scrollY;
         const header = document.querySelector('.header');
-        
+
         if (scrolled > 50) {
             header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
         } else {
             header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
         }
     });
-    
+
     // CSS to support the js animations
     const styleSheet = document.createElement("style");
     styleSheet.innerText = `
@@ -123,5 +123,22 @@ document.addEventListener('DOMContentLoaded', () => {
             switchVideo(video2, video1);
         });
     }
+
+    // Content Protection
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    document.addEventListener('dragstart', event => event.preventDefault());
+
+    document.addEventListener('keydown', event => {
+        // Prevent F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+        if (event.key === 'F12' ||
+            (event.ctrlKey && event.shiftKey && (event.key === 'I' || event.key === 'J')) ||
+            (event.ctrlKey && event.key === 'u') ||
+            // Mac specific: Cmd+Opt+I, Cmd+Opt+U
+            (event.metaKey && event.altKey && event.key === 'i') ||
+            (event.metaKey && event.key === 'u')) {
+            event.preventDefault();
+        }
+    });
 
 });

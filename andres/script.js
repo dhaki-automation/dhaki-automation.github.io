@@ -232,4 +232,21 @@ END:VCARD`;
     // Initialize
     resizeCanvas();
     animateParticles();
+    // Content Protection
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    document.addEventListener('dragstart', event => event.preventDefault());
+
+    document.addEventListener('keydown', event => {
+        // Prevent F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+        if (event.key === 'F12' ||
+            (event.ctrlKey && event.shiftKey && (event.key === 'I' || event.key === 'J')) ||
+            (event.ctrlKey && event.key === 'u') ||
+            // Mac specific: Cmd+Opt+I, Cmd+Opt+U
+            (event.metaKey && event.altKey && event.key === 'i') ||
+            (event.metaKey && event.key === 'u')) {
+            event.preventDefault();
+        }
+    });
+
 });
