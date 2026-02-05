@@ -806,3 +806,9 @@ a img {
     color: var(--color-neutral-gray);
     max-width: 200px;
 }
+/* Adjustment for 7 items in a 3-column grid */
+@media (min-width: 1024px) {
+    .principles-grid .principle-card:nth-child(7) {
+        grid-column: 2;
+    }
+}
