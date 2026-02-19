@@ -7,7 +7,7 @@
     --color-bg-white: #FFFFFF;
     --color-bg-light: #F5F7FA;
     --color-neutral-light: #E0E4EA;
-    --color-neutral-gray: #AAB3C2;
+    --color-neutral-gray: #5C6F82;
 
     /* Gradients */
     --gradient-primary: linear-gradient(to top right, var(--color-primary-teal), var(--color-primary-cyan), var(--color-primary-blue));
@@ -191,6 +191,10 @@ a img {
     display: none;
     font-size: 1.5rem;
     cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    color: inherit;
 }
 
 /* Hero Section */

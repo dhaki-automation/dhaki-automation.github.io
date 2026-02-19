@@ -9,9 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
         menuToggle.addEventListener('click', () => {
             nav.classList.toggle('active');
 
+            const isOpen = nav.classList.contains('active');
+            menuToggle.setAttribute('aria-expanded', isOpen);
+            menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+
             // Icon transition
             const icon = menuToggle.querySelector('i');
-            if (nav.classList.contains('active')) {
+            if (isOpen) {
                 icon.classList.remove('fa-bars');
                 icon.classList.add('fa-times');
             } else {
@@ -26,6 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', () => {
             nav.classList.remove('active');
             if (menuToggle) {
+                menuToggle.setAttribute('aria-expanded', 'false');
+                menuToggle.setAttribute('aria-label', 'Open navigation menu');
                 const icon = menuToggle.querySelector('i');
                 icon.classList.remove('fa-times');
                 icon.classList.add('fa-bars');
