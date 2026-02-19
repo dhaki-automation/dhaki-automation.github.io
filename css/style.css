@@ -38,11 +38,6 @@ body {
     background-color: var(--color-bg-white);
     line-height: 1.6;
     overflow-x: hidden;
-    /* Content Protection */
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 h1,
