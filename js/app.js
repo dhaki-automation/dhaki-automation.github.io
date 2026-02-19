@@ -120,7 +120,9 @@ document.addEventListener('DOMContentLoaded', () => {
             nextVideo.currentTime = 0;
             nextVideo.play().then(() => {
                 nextVideo.classList.add('active');
-                currentVideo.classList.remove('active');
+                requestAnimationFrame(() => {
+                    currentVideo.classList.remove('active');
+                });
             }).catch(e => console.error("Video play error:", e));
         };
 

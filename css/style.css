@@ -711,6 +711,20 @@ a img {
 }
 
 /* Mobile Responsive */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .philosophy-grid {
+        gap: 30px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-info {
+        grid-column: 1 / -1;
+    }
+}
+
 @media (max-width: 768px) {
     .header .nav {
         position: fixed;
