@@ -263,7 +263,7 @@ a img {
 }
 
 .hero h1 {
-    font-size: 4rem;
+    font-size: clamp(2rem, 5vw, 4rem);
     margin-bottom: 20px;
     line-height: 1.1;
 }
@@ -442,6 +442,9 @@ a img {
     overflow: hidden;
     position: relative;
     background: #333;
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 
 .solution-item img {
@@ -742,10 +745,6 @@ a img {
         color: var(--color-text-main);
     }
 
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
     .philosophy-grid {
         grid-template-columns: 1fr;
     }
@@ -819,5 +818,13 @@ a img {
 @media (min-width: 1024px) {
     .principles-grid .principle-card:nth-child(7) {
         grid-column: 2;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
     }
 }

@@ -77,13 +77,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Elements to animate
     const animateElements = document.querySelectorAll('.principle-card, .philosophy-text, .philosophy-visual, .solution-item, .section-title');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    animateElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-        observer.observe(el);
-    });
+    if (!prefersReducedMotion) {
+        animateElements.forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(el);
+        });
+    }
 
     // Add class for animation triggers
     document.addEventListener('scroll', () => {
@@ -95,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
         }
-    });
+    }, { passive: true });
 
     // CSS to support the js animations
     const styleSheet = document.createElement("style");

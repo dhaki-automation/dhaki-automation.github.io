@@ -231,7 +231,9 @@ END:VCARD`;
 
     // Initialize
     resizeCanvas();
-    animateParticles();
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        animateParticles();
+    }
     // Content Protection
     document.addEventListener('contextmenu', event => event.preventDefault());
 
