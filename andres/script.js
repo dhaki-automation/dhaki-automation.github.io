@@ -98,7 +98,7 @@ END:VCARD`;
     window.addEventListener('mousemove', (e) => {
         mouse.x = e.x;
         mouse.y = e.y;
-    });
+    }, { passive: true });
 
     // Handle touch for mobile
     window.addEventListener('touchmove', (e) => {
@@ -106,7 +106,7 @@ END:VCARD`;
             mouse.x = e.touches[0].clientX;
             mouse.y = e.touches[0].clientY;
         }
-    });
+    }, { passive: true });
 
     window.addEventListener('touchend', () => {
         mouse.x = null;
