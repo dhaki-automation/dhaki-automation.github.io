@@ -9,12 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // VCard Data
     const vCardData = `BEGIN:VCARD
 VERSION:3.0
-N:Bolivar;Andres;;;
-FN:Andres Bolivar
-ORG:Dhaki Technologies
-TITLE:Co-Founder and Head of Technology and Innovation
-TEL;TYPE=cell:+971525673553
-EMAIL;TYPE=work:andres@dhaki.ai
+N:Merhi;Rajeh;;;
+FN:Rajeh Merhi
+ORG:Dhaki.ai
+TITLE:Co-Founder and Principal
+TEL;TYPE=cell:+971504619202
+EMAIL;TYPE=work:rajeh@dhaki.ai
 URL:https://dhaki.ai
 END:VCARD`;
 
@@ -22,15 +22,15 @@ END:VCARD`;
     saveBtn.addEventListener('click', async (e) => {
         e.preventDefault();
 
-        const file = new File([vCardData], "Andres_Dhaki.vcf", { type: "text/vcard" });
+        const file = new File([vCardData], "Rajeh_Dhaki.vcf", { type: "text/vcard" });
 
         // Try Web Share API first (Best for Mobile: iOS/Android)
         if (navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
             try {
                 await navigator.share({
                     files: [file],
-                    title: 'Andres Bolivar',
-                    text: 'Contact card for Andres Bolivar',
+                    title: 'Rajeh Merhi',
+                    text: 'Contact card for Rajeh Merhi',
                 });
                 return; // Interaction complete if share was successful
             } catch (err) {
@@ -41,7 +41,7 @@ END:VCARD`;
         // Fallback: Download for Desktop or browsers without Share API
         const url = URL.createObjectURL(file);
         const newLink = document.createElement('a');
-        newLink.download = "Andres_Dhaki.vcf";
+        newLink.download = "Rajeh_Dhaki.vcf";
         newLink.textContent = "Download vCard";
         newLink.href = url;
 
