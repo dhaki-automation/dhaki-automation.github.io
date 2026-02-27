@@ -16,6 +16,7 @@
         })(window, document, 'script', 'dataLayer', 'GTM-5N2V8MJT');</script>
     <!-- End Google Tag Manager -->
     <title>Smart and Secure Private Environments | Dhaki Technologies</title>
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="apple-touch-icon" href="assets/favicon.png">
@@ -69,11 +70,11 @@
     }
     </script>
 
-    <!-- Fonts -->
+    <!-- Fonts: Syne (display) + DM Sans (body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <!-- Styles -->
@@ -118,7 +119,8 @@
                             class="btn-nav">Book Consultation</a></li>
                 </ul>
             </nav>
-            <button class="mobile-menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav">
+            <button class="mobile-menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="main-nav">
                 <i class="fas fa-bars" aria-hidden="true"></i>
             </button>
         </div>
@@ -126,40 +128,56 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-bg-placeholder">
-            <video id="hero-video-1" class="hero-bg-video active" autoplay muted playsinline
-                poster="assets/hero-image.jpg">
-                <source src="assets/hero-video.mp4" type="video/mp4">
-            </video>
-            <video id="hero-video-2" class="hero-bg-video" muted playsinline poster="assets/hero-image-2.jpg">
-                <source src="assets/hero-video-2.mp4" type="video/mp4">
-            </video>
-        </div>
+        <canvas id="hero-canvas" aria-hidden="true"></canvas>
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <h1 class="bounce-in">Smart and Secure Private Environments<br>Designed Around How You Live</h1>
-            <p class="fade-in-up"><span class="gradient-text">Dhaki</span> designs bespoke environments that combine
-                intelligent automation and private
-                digital security, creating spaces that are intuitive, discreet, and built to protect what matters most.
-            </p>
+            <h1 class="bounce-in">Smart and Secure<br><span class="gradient-text">Private Environments</span></h1>
+            <p class="hero-sub fade-in-up">Designed around how you live</p>
+            <p class="fade-in-up delay-1">Dhaki designs bespoke environments that combine intelligent automation and private
+                digital security — spaces that are intuitive, discreet, and built to protect what matters most.</p>
             <div class="hero-btns fade-in-up delay-1">
                 <a href="https://outlook.office.com/book/consultation@dhaki.ai/" target="_blank"
                     class="btn-primary">Book a Private Consultation</a>
                 <a href="#solutions" class="btn-secondary">Explore Our Environments</a>
             </div>
         </div>
+        <div class="hero-scroll" aria-hidden="true">
+            <div class="hero-scroll-line"></div>
+            <span>Scroll</span>
+        </div>
     </section>
+
+    <!-- Brand Statement Bar -->
+    <div class="brand-bar">
+        <div class="container">
+            <div class="brand-bar-inner">
+                <div class="brand-bar-item">
+                    <div class="brand-bar-dot"></div>
+                    <span>Technology Refined</span>
+                </div>
+                <div class="brand-bar-item">
+                    <div class="brand-bar-dot"></div>
+                    <span>Privacy Embedded</span>
+                </div>
+                <div class="brand-bar-item">
+                    <div class="brand-bar-dot"></div>
+                    <span>Control Preserved</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Philosophy Section -->
     <section id="philosophy" class="philosophy section-padding">
         <div class="container">
             <div class="philosophy-grid">
                 <div class="philosophy-text">
-                    <h2 class="section-title">Our Philosophy</h2>
-                    <p class="lead">Two Pillars. One Seamless Experience.</p>
+                    <p class="section-label">Our Philosophy</p>
+                    <h2 class="section-title">Two Pillars.<br>One Seamless Experience.</h2>
+                    <p class="lead">Intelligent Automation. Private Digital Security.</p>
                     <p>
-                        We believe a modern private environment requires two fundamental strengths: <strong>Intelligent
-                            Automation</strong> and <strong>Private Digital Security</strong>.
+                        We believe a modern private environment requires two fundamental strengths:
+                        <strong>Intelligent Automation</strong> and <strong>Private Digital Security</strong>.
                     </p>
                     <p>
                         Automation shapes spaces that adapt naturally to how life unfolds. Security operates quietly
@@ -168,78 +186,74 @@
                     </p>
                     <p>
                         A Dhaki environment doesn't just respond. It anticipates. It protects. True luxury is the
-                        freedom to live effortlessly, with confidence that everything essential is quietly taken care
-                        of.
+                        freedom to live effortlessly — with confidence that everything essential is quietly taken care of.
                     </p>
                     <div class="meaning-box">
-                        <h3>"Dhaki"</h3>
-                        <p>Arabic (<strong>ذكي</strong>) for <strong>Smart</strong> or <strong>Intelligent</strong>.</p>
-                        <p style="margin-top: 10px; font-size: 0.9rem; opacity: 0.8;">
-                            We chose this name to honor the region we serve and to reflect our philosophy: the
-                            intelligence to adapt, paired with the wisdom to protect.
+                        <h3>"Dhaki" — ذكي</h3>
+                        <p>Arabic for <strong>Smart</strong> or <strong>Intelligent</strong>.</p>
+                        <p style="margin-top: 8px; font-size: 0.88rem;">
+                            We chose this name to honor the region we serve and to reflect our philosophy:
+                            the intelligence to adapt, paired with the wisdom to protect.
                         </p>
                     </div>
                 </div>
                 <div class="philosophy-visual">
-                    <div class="visual-placeholder glass-card">
+                    <div class="philosophy-img-wrap">
                         <picture>
                             <source srcset="assets/philosophy.webp" type="image/webp">
-                            <img src="assets/philosophy.jpg" alt="Philosophy Visual" loading="lazy"
-                                style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                            <img src="assets/philosophy.jpg" alt="Philosophy Visual" loading="lazy">
                         </picture>
                     </div>
+                    <div class="philosophy-glow" aria-hidden="true"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Core Principles -->
-    <section id="principles" class="principles section-padding bg-light">
+    <!-- Two Pillars Section (replaces Core Principles) -->
+    <section id="principles" class="pillars section-padding">
         <div class="container">
-            <h2 class="section-title text-center">Core Principles</h2>
-            <div class="principles-grid">
-                <!-- Principle 1 -->
-                <div class="principle-card">
-                    <div class="icon-box"><i class="fas fa-gem"></i></div>
-                    <h3>Luxury through Simplicity</h3>
-                    <p>Technology disappears, leaving only effortless comfort.</p>
+            <div class="pillars-header">
+                <p class="section-label">What We Offer</p>
+                <h2 class="section-title">Intelligent Spaces<br>Private Digital Security</h2>
+                <p class="section-subtitle">Two complementary services, united by a single commitment: your environment
+                    should think for you and protect you.</p>
+            </div>
+            <div class="pillars-grid">
+
+                <!-- Pillar 1: Automation -->
+                <div class="principle-card pillar-automation">
+                    <span class="pillar-tag">Intelligent Automation</span>
+                    <h3>Environments That Adapt to Life</h3>
+                    <p>Modular, privacy-first smart environments for homes, offices, and hospitality spaces. Technology
+                        that disappears into architecture leaving only effortless comfort.</p>
+                    <ul class="pillar-features">
+                        <li>Adaptive lighting, climate &amp; security</li>
+                        <li>Seamless ecosystem integration</li>
+                        <li>Behavior-based automation logic</li>
+                        <li>AI-driven environment intelligence</li>
+                        <li>Modular, vendor-neutral architecture</li>
+                    </ul>
+                    <p class="pillar-audience">For Residences &amp; Spaces That Demand Intelligence</p>
                 </div>
-                <!-- Principle 2 -->
-                <div class="principle-card">
-                    <div class="icon-box"><i class="fas fa-brain"></i></div>
-                    <h3>Intelligence that Adapts</h3>
-                    <p>Environments respond naturally to people and their context.</p>
+
+                <!-- Pillar 2: Security -->
+                <div class="principle-card pillar-security">
+                    <span class="pillar-tag">Private Digital Security</span>
+                    <h3>Private Digital Protection</h3>
+                    <p>Advanced digital risk reduction for individuals and families who require a strategic, personal
+                        approach to security. This is not corporate IT. This is personal digital protection.</p>
+                    <ul class="pillar-features">
+                        <li>Digital exposure mapping &amp; risk assessment</li>
+                        <li>Personal device hardening</li>
+                        <li>Identity protection &amp; secure communications</li>
+                        <li>Family security protocols</li>
+                        <li>Travel security strategy</li>
+                        <li>Incident response frameworks</li>
+                    </ul>
+                    <p class="pillar-audience">Reserved for Private Clients</p>
                 </div>
-                <!-- Principle 3 -->
-                <div class="principle-card">
-                    <div class="icon-box"><i class="fas fa-shield-alt"></i></div>
-                    <h3>Privacy & Security First</h3>
-                    <p>Protection is built in, never added later.</p>
-                </div>
-                <!-- Principle 4 -->
-                <div class="principle-card">
-                    <div class="icon-box"><i class="fas fa-user"></i></div>
-                    <h3>Human-Centered Design</h3>
-                    <p>Intuitive experiences designed for everyday life.</p>
-                </div>
-                <!-- Principle 5 -->
-                <div class="principle-card">
-                    <div class="icon-box"><i class="fas fa-home"></i></div>
-                    <h3>Crafted Integration</h3>
-                    <p>Technology integrated with precision and respect for design.</p>
-                </div>
-                <!-- Principle 6 -->
-                <div class="principle-card">
-                    <div class="icon-box"><i class="fas fa-infinity"></i></div>
-                    <h3>Enduring Value</h3>
-                    <p>Systems designed to evolve and last over time.</p>
-                </div>
-                <!-- Principle 7 -->
-                <div class="principle-card">
-                    <div class="icon-box"><i class="fas fa-link"></i></div>
-                    <h3>Discreet by Design</h3>
-                    <p>Intelligence and security operate quietly in the background.</p>
-                </div>
+
             </div>
         </div>
     </section>
@@ -247,93 +261,102 @@
     <!-- Solutions -->
     <section id="solutions" class="solutions section-padding">
         <div class="container">
-            <h2 class="section-title text-center">Bespoke Intelligence, Designed Around Life</h2>
-            <p class="text-center section-subtitle" style="max-width: 800px; margin-left: auto; margin-right: auto;">
-                We design private environments through two complementary pillars: <strong>Intelligent
-                    Automation</strong> and <strong>Private Digital Security</strong>.
-            </p>
-            <p class="text-center section-subtitle" style="max-width: 800px; margin-left: auto; margin-right: auto;">
-                Automation shapes intuitive spaces that adapt naturally to how you live and work. Security operates
-                quietly in the background, protecting your home, devices, and digital presence.
-            </p>
+            <div class="solutions-header">
+                <p class="section-label">Our Environments</p>
+                <h2 class="section-title">Three Distinct Environments</h2>
+                <p class="section-subtitle">Each project is designed from the ground up — tailored to your space,
+                    your lifestyle, and your level of required privacy.</p>
+            </div>
             <div class="solutions-grid">
-                <a class="solution-item" href="https://outlook.office.com/book/consultation@dhaki.ai/" target="_blank" rel="noopener" aria-label="Book a consultation for Private Living">
-                    <div class="solution-placeholder">Private Living</div>
+                <a class="solution-item" href="https://outlook.office.com/book/consultation@dhaki.ai/" target="_blank"
+                    rel="noopener" aria-label="Book a consultation for Private Living">
                     <picture>
                         <source srcset="assets/private-living-thumb.webp" type="image/webp">
-                        <img src="assets/private-living-thumb.jpg" alt="Private Living" loading="lazy"
-                            style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="assets/private-living-thumb.jpg" alt="Private Living" loading="lazy">
                     </picture>
+                    <div class="solution-overlay"></div>
+                    <div class="solution-placeholder">
+                        <span class="solution-placeholder-label">Private Living</span>
+                        <span class="solution-placeholder-cta">Book Consultation <i class="fas fa-arrow-right"></i></span>
+                    </div>
                 </a>
-                <a class="solution-item" href="https://outlook.office.com/book/consultation@dhaki.ai/" target="_blank" rel="noopener" aria-label="Book a consultation for Private Workspace">
-                    <div class="solution-placeholder">Private Workspace</div>
+                <a class="solution-item" href="https://outlook.office.com/book/consultation@dhaki.ai/" target="_blank"
+                    rel="noopener" aria-label="Book a consultation for Private Workspace">
                     <picture>
                         <source srcset="assets/private-workspace-thumb.webp" type="image/webp">
-                        <img src="assets/private-workspace-thumb.jpg" alt="Private Workspace" loading="lazy"
-                            style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="assets/private-workspace-thumb.jpg" alt="Private Workspace" loading="lazy">
                     </picture>
+                    <div class="solution-overlay"></div>
+                    <div class="solution-placeholder">
+                        <span class="solution-placeholder-label">Private Workspace</span>
+                        <span class="solution-placeholder-cta">Book Consultation <i class="fas fa-arrow-right"></i></span>
+                    </div>
                 </a>
-                <a class="solution-item" href="https://outlook.office.com/book/consultation@dhaki.ai/" target="_blank" rel="noopener" aria-label="Book a consultation for Private Digital Security">
-                    <div class="solution-placeholder">Private Digital Security</div>
+                <a class="solution-item" href="https://outlook.office.com/book/consultation@dhaki.ai/" target="_blank"
+                    rel="noopener" aria-label="Book a consultation for Private Digital Security">
                     <picture>
                         <source srcset="assets/private-digital-security-thumb.webp" type="image/webp">
-                        <img src="assets/private-digital-security-thumb.png" alt="Private Digital Security" loading="lazy"
-                            style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="assets/private-digital-security-thumb.png" alt="Private Digital Security" loading="lazy">
                     </picture>
+                    <div class="solution-overlay"></div>
+                    <div class="solution-placeholder">
+                        <span class="solution-placeholder-label">Private Digital Security</span>
+                        <span class="solution-placeholder-cta">Book Consultation <i class="fas fa-arrow-right"></i></span>
+                    </div>
                 </a>
             </div>
         </div>
     </section>
 
     <!-- Our Process -->
-    <section id="process" class="process section-padding bg-light">
+    <section id="process" class="process section-padding">
         <div class="container">
-            <h2 class="section-title text-center">Our Journey Together</h2>
-            <p class="text-center section-subtitle" style="max-width: 800px; margin-left: auto; margin-right: auto;">
-                A clear, considered process designed to create intelligent, secure private environments.
-            </p>
+            <div class="process-header">
+                <p class="section-label">Our Journey Together</p>
+                <h2 class="section-title">A Clear, Considered Process</h2>
+                <p class="section-subtitle">Designed to create intelligent, secure private environments with precision
+                    and respect for your space.</p>
+            </div>
 
             <div class="process-steps">
                 <div class="step-card">
-                    <div class="step-number">1</div>
+                    <div class="step-number">01</div>
                     <h3>Discovery Consultation</h3>
                     <p>We understand your lifestyle, priorities, and existing environment.</p>
                 </div>
                 <div class="step-card">
-                    <div class="step-number">2</div>
-                    <h3>Smart Design & Risk Assessment</h3>
-                    <p>We design a tailored environment, balancing intelligence, security, and long-term reliability.
-                    </p>
+                    <div class="step-number">02</div>
+                    <h3>Smart Design &amp; Risk Assessment</h3>
+                    <p>We design a tailored environment, balancing intelligence, security, and long-term reliability.</p>
                 </div>
                 <div class="step-card">
-                    <div class="step-number">3</div>
+                    <div class="step-number">03</div>
                     <h3>Professional Installation</h3>
                     <p>Systems are installed with precision, care, and respect for your space.</p>
                 </div>
                 <div class="step-card">
-                    <div class="step-number">4</div>
-                    <h3>Configuration & Hardening</h3>
+                    <div class="step-number">04</div>
+                    <h3>Configuration &amp; Hardening</h3>
                     <p>We configure, secure, and fine-tune every detail for real-world use.</p>
                 </div>
                 <div class="step-card">
-                    <div class="step-number">5</div>
-                    <h3>Handover & Training</h3>
+                    <div class="step-number">05</div>
+                    <h3>Handover &amp; Training</h3>
                     <p>A personal walkthrough ensures clarity, confidence, and control.</p>
                 </div>
                 <div class="step-card">
-                    <div class="step-number">6</div>
+                    <div class="step-number">06</div>
                     <h3>Aftercare Support</h3>
                     <p>Ongoing support to maintain performance, security, and peace of mind.</p>
                 </div>
             </div>
 
-            <div class="process-actions" style="margin-top: 50px; text-align: center;">
-                <div class="hero-btns" style="justify-content: center;">
-                    <a href="https://outlook.office.com/book/consultation@dhaki.ai" target="_blank"
-                        class="btn-primary">Book a Private Consultation</a>
-                    <a href="https://wa.me/971504619202" target="_blank" class="btn-outline-primary"><i
-                            class="fab fa-whatsapp"></i> Chat Privately on WhatsApp</a>
-                </div>
+            <div class="process-actions">
+                <a href="https://outlook.office.com/book/consultation@dhaki.ai" target="_blank"
+                    class="btn-primary">Book a Private Consultation</a>
+                <a href="https://wa.me/971504619202" target="_blank" class="btn-outline-primary">
+                    <i class="fab fa-whatsapp"></i> Chat Privately on WhatsApp
+                </a>
             </div>
         </div>
     </section>
@@ -341,54 +364,54 @@
     <!-- Expert Team -->
     <section id="team" class="team section-padding">
         <div class="container">
-            <div class="team-content text-center">
-                <h2 class="section-title">Global Expertise. Personal Commitment.</h2>
-                <p style="max-width: 800px; margin: 0 auto 40px auto;">
+            <div class="team-header">
+                <p class="section-label">The Team</p>
+                <h2 class="section-title">Global Expertise.<br>Personal Commitment.</h2>
+                <p>
                     Dhaki is built on deep technical expertise and direct, hands-on involvement.
-                    Every project is led with care, discretion, and a long-term view, combining global engineering
+                    Every project is led with care, discretion, and a long-term view — combining global engineering
                     standards with a highly personal level of involvement.
-                    <br><br>
-                    <strong>We value long-term relationships and take a considered, human approach to every
-                        engagement.</strong>
                 </p>
-
-                <div class="team-frames">
-                    <a class="team-member" href="andres/index.html">
-                        <div class="member-frame">
-                            <img src="andres/assets/profile.webp" alt="Andres Bolivar" loading="lazy">
-                        </div>
-                        <h4 class="member-name">Andres Bolivar</h4>
-                        <p class="member-role">Co-Founder<br>Private Digital Security & Intelligent Environments</p>
-                    </a>
-                    <a class="team-member" href="rajeh/index.html">
-                        <div class="member-frame">
-                            <img src="rajeh/assets/profile.webp" alt="Rajeh Merhi" loading="lazy">
-                        </div>
-                        <h4 class="member-name">Rajeh Merhi</h4>
-                        <p class="member-role">Co-Founder<br>Client Strategy & Field Operations</p>
-                    </a>
-                </div>
+            </div>
+            <div class="team-frames">
+                <a class="team-member" href="andres/index.html">
+                    <div class="member-frame">
+                        <img src="andres/assets/profile.webp" alt="Andres Bolivar" loading="lazy">
+                    </div>
+                    <h4 class="member-name">Andres Bolivar</h4>
+                    <p class="member-role">Co-Founder<br>Private Digital Security &amp; Intelligent Environments</p>
+                </a>
+                <a class="team-member" href="rajeh/index.html">
+                    <div class="member-frame">
+                        <img src="rajeh/assets/profile.webp" alt="Rajeh Merhi" loading="lazy">
+                    </div>
+                    <h4 class="member-name">Rajeh Merhi</h4>
+                    <p class="member-role">Co-Founder<br>Client Strategy &amp; Field Operations</p>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Testimonials -->
-    <section id="testimonials" class="testimonials section-padding bg-light">
+    <section id="testimonials" class="testimonials section-padding">
         <div class="container">
-            <h2 class="section-title text-center">Client Stories</h2>
+            <div class="testimonials-header">
+                <p class="section-label">Client Stories</p>
+                <h2 class="section-title">Words from Our Clients</h2>
+            </div>
             <div class="testimonials-grid">
                 <blockquote class="testimonial-card">
-                    <div class="quote-icon"><i class="fas fa-quote-left" aria-hidden="true"></i></div>
+                    <div class="quote-icon" aria-hidden="true">"</div>
                     <p>"Dhaki transformed our villa into something out of a movie. The team was incredibly warm and professional."</p>
                     <footer class="author"><cite>— Customer in Jumeirah Golf Estates</cite></footer>
                 </blockquote>
                 <blockquote class="testimonial-card">
-                    <div class="quote-icon"><i class="fas fa-quote-left" aria-hidden="true"></i></div>
+                    <div class="quote-icon" aria-hidden="true">"</div>
                     <p>"During our villa renovation, Dhaki designed a complete smart solution for lights, sound, security, entertainment and climate. The result is amazing."</p>
                     <footer class="author"><cite>— Customer in Springs Villas</cite></footer>
                 </blockquote>
                 <blockquote class="testimonial-card">
-                    <div class="quote-icon"><i class="fas fa-quote-left" aria-hidden="true"></i></div>
+                    <div class="quote-icon" aria-hidden="true">"</div>
                     <p>"I didn't know I needed smart automation until I tried Dhaki. Now I can't imagine my home without it. Everything feels effortless."</p>
                     <footer class="author"><cite>— Customer in JVC</cite></footer>
                 </blockquote>
@@ -403,34 +426,40 @@
                 <div class="footer-info">
                     <picture>
                         <source srcset="assets/LogoText.webp" type="image/webp">
-                        <img src="assets/LogoText.png" alt="Dhaki" class="footer-logo filter-white" loading="lazy">
+                        <img src="assets/LogoText.png" alt="Dhaki" class="footer-logo" loading="lazy">
                     </picture>
-                    <p>Smart and Secure Private Environments.</p>
+                    <p>Intelligent automation and private digital security for those who expect more from their environments.</p>
                 </div>
                 <div class="footer-contact">
-                    <h3>Contact Us</h3>
+                    <h3>Contact</h3>
                     <ul>
                         <li><i class="fas fa-map-marker-alt"></i> Dubai, United Arab Emirates</li>
-                        <li><i class="fas fa-phone"></i> <a href="tel:+971504619202">+971 50 461 9202</a>
-                        </li>
-                        <li><i class="fas fa-envelope"></i> <a href="mailto:solutions@dhaki.ai">solutions@dhaki.ai</a>
-                        </li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+971504619202">+971 50 461 9202</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:solutions@dhaki.ai">solutions@dhaki.ai</a></li>
                     </ul>
                 </div>
                 <div class="footer-social">
-                    <h3>Follow Us</h3>
+                    <h3>Follow</h3>
                     <div class="social-links">
-                        <a href="https://instagram.com/dhaki.ai" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://instagram.com/dhaki.ai" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/dhakiai" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://wa.me/971504619202" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
                     </div>
-                    <div style="margin-top: 20px;">
-                        <a href="https://outlook.office.com/book/consultation@dhaki.ai/" target="_blank"
-                            class="btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Book a Private
-                            Consultation</a>
-                    </div>
+                    <a href="https://outlook.office.com/book/consultation@dhaki.ai/" target="_blank"
+                        class="btn-primary" style="font-size: 0.82rem; padding: 10px 22px;">
+                        Book a Consultation
+                    </a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>Bespoke environments. Designed with discretion.</p>
+                <span>© 2025 Dhaki Technologies. All rights reserved.</span>
+                <span>Bespoke environments. Designed with discretion.</span>
             </div>
         </div>
     </footer>

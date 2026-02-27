@@ -153,3 +153,147 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+// === HERO 3D PARTICLE NETWORK ===============================
+(function initHeroCanvas() {
+    const canvas = document.getElementById('hero-canvas');
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    const N = 72;
+    const LINK_DIST = 160;
+    const SPREAD = 460;
+    const FOV = 860;
+
+    let W, H, cx, cy;
+    let autoRotY = 0;
+    let tiltX = 0, tiltY = 0, targetTiltX = 0, targetTiltY = 0;
+
+    // Interpolate brand gradient: teal → cyan → blue
+    function gradColor(t, a) {
+        let r, g, b;
+        if (t < 0.5) {
+            const u = t * 2;
+            r = (33 + (27 - 33) * u) | 0;
+            g = (209 + (200 - 209) * u) | 0;
+            b = (195 + (230 - 195) * u) | 0;
+        } else {
+            const u = (t - 0.5) * 2;
+            r = 27;
+            g = (200 + (103 - 200) * u) | 0;
+            b = (230 + (198 - 230) * u) | 0;
+        }
+        return `rgba(${r},${g},${b},${a})`;
+    }
+
+    const nodes = Array.from({ length: N }, (_, i) => ({
+        ox: (Math.random() - 0.5) * SPREAD * 2,
+        oy: (Math.random() - 0.5) * SPREAD * 1.3,
+        oz: (Math.random() - 0.5) * SPREAD * 2,
+        vx: (Math.random() - 0.5) * 0.2,
+        vy: (Math.random() - 0.5) * 0.16,
+        vz: (Math.random() - 0.5) * 0.2,
+        size: i < 6 ? Math.random() * 1.8 + 2.4 : Math.random() * 1.1 + 0.7,
+        ct: Math.random(),
+        ph: Math.random() * Math.PI * 2,
+        hub: i < 6,
+    }));
+
+    function resize() {
+        W = canvas.width = canvas.offsetWidth;
+        H = canvas.height = canvas.offsetHeight;
+        cx = W / 2;
+        cy = H / 2;
+    }
+
+    function project(x, y, z) {
+        const d = FOV / (FOV + z + 400);
+        return { sx: x * d + cx, sy: y * d + cy, d };
+    }
+
+    function xform(n) {
+        const ry = autoRotY + tiltY;
+        const cosY = Math.cos(ry), sinY = Math.sin(ry);
+        const x1 = n.ox * cosY - n.oz * sinY;
+        const z1 = n.ox * sinY + n.oz * cosY;
+        const cosX = Math.cos(tiltX), sinX = Math.sin(tiltX);
+        const y1 = n.oy * cosX - z1 * sinX;
+        const z2 = n.oy * sinX + z1 * cosX;
+        return { x: x1, y: y1, z: z2 };
+    }
+
+    function frame() {
+        ctx.clearRect(0, 0, W, H);
+
+        autoRotY += 0.0013;
+        tiltX += (targetTiltX - tiltX) * 0.035;
+        tiltY += (targetTiltY - tiltY) * 0.035;
+
+        nodes.forEach(n => {
+            n.ox += n.vx;
+            n.oy += n.vy;
+            n.oz += n.vz;
+            if (Math.abs(n.ox) > SPREAD)        n.vx *= -1;
+            if (Math.abs(n.oy) > SPREAD * 0.65) n.vy *= -1;
+            if (Math.abs(n.oz) > SPREAD)        n.vz *= -1;
+            n.ph += 0.016;
+        });
+
+        const proj = nodes.map(n => {
+            const { x, y, z } = xform(n);
+            return { ...project(x, y, z), n };
+        });
+
+        // Draw connections
+        for (let i = 0; i < proj.length; i++) {
+            for (let j = i + 1; j < proj.length; j++) {
+                const pi = proj[i], pj = proj[j];
+                const dx = pi.sx - pj.sx, dy = pi.sy - pj.sy;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                if (dist < LINK_DIST) {
+                    const alpha = (1 - dist / LINK_DIST) * 0.25 * Math.min(pi.d, pj.d);
+                    ctx.beginPath();
+                    ctx.moveTo(pi.sx, pi.sy);
+                    ctx.lineTo(pj.sx, pj.sy);
+                    ctx.strokeStyle = gradColor((pi.n.ct + pj.n.ct) / 2, alpha);
+                    ctx.lineWidth = 0.7;
+                    ctx.stroke();
+                }
+            }
+        }
+
+        // Draw nodes back-to-front
+        proj.slice().sort((a, b) => a.d - b.d).forEach(({ sx, sy, d, n }) => {
+            const pulse = n.hub ? 1 + Math.sin(n.ph) * 0.2 : 1;
+            const r = n.size * d * 1.85 * pulse;
+            const alpha = 0.4 + d * 0.6;
+
+            // Glow halo
+            const glowR = r * 5.5;
+            const grd = ctx.createRadialGradient(sx, sy, 0, sx, sy, glowR);
+            grd.addColorStop(0, gradColor(n.ct, alpha * 0.28));
+            grd.addColorStop(1, gradColor(n.ct, 0));
+            ctx.beginPath();
+            ctx.arc(sx, sy, glowR, 0, Math.PI * 2);
+            ctx.fillStyle = grd;
+            ctx.fill();
+
+            // Node core
+            ctx.beginPath();
+            ctx.arc(sx, sy, r, 0, Math.PI * 2);
+            ctx.fillStyle = gradColor(n.ct, alpha);
+            ctx.fill();
+        });
+
+        requestAnimationFrame(frame);
+    }
+
+    document.addEventListener('mousemove', e => {
+        targetTiltY = (e.clientX / window.innerWidth - 0.5) * 0.32;
+        targetTiltX = (e.clientY / window.innerHeight - 0.5) * 0.16;
+    });
+
+    window.addEventListener('resize', resize);
+    resize();
+    requestAnimationFrame(frame);
+})();
