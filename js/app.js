@@ -39,6 +39,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Nav Dropdown — mobile toggle + close-on-outside-click
+    const dropdownTriggers = document.querySelectorAll('.nav-dropdown-trigger');
+    dropdownTriggers.forEach(trigger => {
+        trigger.addEventListener('click', e => {
+            e.stopPropagation();
+            const dropdown = trigger.closest('.nav-dropdown');
+            const isOpen = dropdown.classList.toggle('open');
+            trigger.setAttribute('aria-expanded', isOpen);
+        });
+    });
+
+    document.addEventListener('click', e => {
+        if (!e.target.closest('.nav-dropdown')) {
+            document.querySelectorAll('.nav-dropdown.open').forEach(d => {
+                d.classList.remove('open');
+                const t = d.querySelector('.nav-dropdown-trigger');
+                if (t) t.setAttribute('aria-expanded', 'false');
+            });
+        }
+    });
+
     // Smooth Scrolling with Offset
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
